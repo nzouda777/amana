@@ -1,0 +1,9 @@
+<!-- TODO(client) : logo provisoire. Remplacer par le logo vectoriel officiel (blanc sur fond vert). -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236 56" width="236" height="56" role="img" aria-label="Amana Conseil">
+  <path d="M24 2.5 44.5 9v17.5C44.5 39.6 36 48.9 24 53.5 12 48.9 3.5 39.6 3.5 26.5V9Z" fill="none" stroke="#ffffff" stroke-width="1.6"/>
+  <g fill="none" stroke="#d4af37" stroke-width="1.6">
+    <path d="M16.2 18.2h15.6v15.6H16.2z"/>
+    <path d="M24 15l11 11-11 11-11-11z"/>
+  </g>
+  <text x="58" y="34" fill="#ffffff" font-family="Baskerville, 'Libre Baskerville', Baskervville, Georgia, 'Times New Roman', serif" font-size="24" textLength="172" lengthAdjust="spacingAndGlyphs">Amana Conseil</text>
+</svg>

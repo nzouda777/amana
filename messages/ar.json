@@ -1,0 +1,1578 @@
+{
+  "metadata": {
+    "siteName": "أمانة للاستشارات",
+    "defaultTitle": "أمانة للاستشارات — استشارات في التمويل الإسلامي والتكافل",
+    "defaultDescription": "TODO(client) : traduction arabe à valider.",
+    "ogHomeTitle": "TODO(translation)",
+    "ogTagline": "TODO(translation)"
+  },
+  "home": {
+    "title": "أمانة للاستشارات",
+    "tagline": "الأخلاق، الامتثال، الابتكار",
+    "placeholder": "TODO(client) : traduction arabe à valider."
+  },
+  "common": {
+    "skipToContent": "انتقل إلى المحتوى",
+    "languageSwitcher": "تغيير اللغة"
+  },
+  "header": {
+    "home": "أمانة للاستشارات، الصفحة الرئيسية",
+    "mainNav": "التنقل الرئيسي",
+    "menu": "القائمة",
+    "openMenu": "فتح القائمة",
+    "search": "بحث",
+    "account": "حسابي",
+    "cart": "{count, plural, =0 {السلة، فارغة} one {السلة، # منتج} two {السلة، # منتج} few {السلة، # منتجات} many {السلة، # منتجًا} other {السلة، # منتج}}",
+    "appointment": "احجز موعدًا",
+    "pillarOverview": "اكتشف قسم {pillar}"
+  },
+  "footer": {
+    "tagline": "الأخلاق والامتثال والابتكار: استشارات وتدقيق وتدريب في التمويل والتأمين الإسلاميين، من دوالا.",
+    "newsletterTitle": "النشرة الإخبارية",
+    "newsletterText": "رسالة واحدة شهريًا: التنظيم، الدورات، الندوات عبر الإنترنت.",
+    "siteMap": "خريطة الموقع",
+    "contactTitle": "تواصل معنا",
+    "social": "شبكات التواصل الاجتماعي",
+    "disclaimer": "تُقدّم أمانة للاستشارات المعلومات والتدريب. لا يُعدّ محتوى هذا الموقع فتوى ولا نصيحة مالية شخصية؛ لأي قرار مُلزِم، استشر مختصًا مؤهلًا.",
+    "copyright": "© {year} أمانة للاستشارات. جميع الحقوق محفوظة."
+  },
+  "ui": {
+    "button": {
+      "loading": "جارٍ التحميل"
+    },
+    "field": {
+      "optional": "اختياري"
+    },
+    "stepper": {
+      "label": "مراحل النموذج",
+      "progress": "المرحلة {current} من {total}",
+      "complete": "مكتملة",
+      "current": "جارية",
+      "upcoming": "قادمة"
+    },
+    "breadcrumb": {
+      "label": "مسار التنقل"
+    },
+    "pagination": {
+      "label": "ترقيم الصفحات",
+      "previous": "السابقة",
+      "next": "التالية",
+      "page": "الصفحة {page}",
+      "position": "الصفحة {page} من {pageCount}"
+    },
+    "progress": {
+      "value": "{value}٪"
+    },
+    "price": {
+      "free": "مجاني",
+      "current": "السعر الحالي:",
+      "compareAt": "السعر الأصلي:"
+    },
+    "table": {
+      "sortAscending": "ترتيب تصاعدي",
+      "sortDescending": "ترتيب تنازلي"
+    },
+    "prose": {
+      "keyPoint": "للتذكير",
+      "warning": "تنبيه"
+    },
+    "dialog": {
+      "close": "إغلاق"
+    },
+    "toast": {
+      "region": "إشعار",
+      "viewport": "الإشعارات ({hotkey})",
+      "close": "إغلاق الإشعار"
+    },
+    "duration": {
+      "minutes": "{minutes} د",
+      "hours": "{hours} س",
+      "hoursMinutes": "{hours} س {minutes} د"
+    },
+    "course": {
+      "freePreview": "مقتطف مجاني",
+      "instructor": "مع {name}",
+      "durationLabel": "المدة:",
+      "levelLabel": "المستوى:",
+      "level": {
+        "beginner": "مبتدئ",
+        "intermediate": "متوسط",
+        "advanced": "متقدم"
+      }
+    },
+    "capsule": {
+      "roles": "المهن المعنية",
+      "durationLabel": "المدة:",
+      "duration": "{minutes} د",
+      "preview": "معاينة"
+    },
+    "purchase": {
+      "label": "شراء الدورة",
+      "includes": "يشمل"
+    },
+    "faq": {
+      "title": "الأسئلة الشائعة"
+    },
+    "service": {
+      "problem": "ما يواجهه عملاؤنا",
+      "offers": "عرضنا",
+      "offersNav": "عروض القسم",
+      "offerDetails": "اعرف المزيد: {offer}",
+      "method": "منهجيتنا",
+      "step": "المرحلة {number}:",
+      "deliverables": "المخرجات المعتادة",
+      "cases": "حالات العملاء"
+    },
+    "whatsapp": {
+      "label": "واتساب",
+      "newWindow": "(نافذة جديدة)",
+      "region": "التواصل عبر واتساب"
+    }
+  },
+  "styleguide": {
+    "metaTitle": "نظام التصميم",
+    "title": "نظام التصميم",
+    "lead": "الرموز والمكوّنات والأنماط الخاصة بالموقع ومنصة التدريب، بجميع حالاتها. صفحة داخلية غير مفهرسة.",
+    "compareLink": "مقارنة الفرنسية والعربية جنبًا إلى جنب",
+    "backLink": "العودة إلى الدليل",
+    "compareTitle": "الفرنسية والعربية جنبًا إلى جنب",
+    "compareFrameFr": "الدليل بالفرنسية",
+    "compareFrameAr": "الدليل بالعربية (من اليمين إلى اليسار)",
+    "tocLabel": "فهرس الدليل",
+    "sections": {
+      "colors": {
+        "title": "الألوان",
+        "lead": "الأخضر هو الغالب، والذهبي للإبراز، والرملي في مواضع محدودة. لا يُستخدم الذهبي الأساسي نصًا على خلفية فاتحة: يحلّ محلّه gold-700."
+      },
+      "typography": {
+        "title": "الطباعة",
+        "lead": "خط باسكرفيل للعناوين، وأوبن سانس للنصوص والواجهة. سلّم مرن من 390 إلى 1440 بكسل."
+      },
+      "spacing": {
+        "title": "المسافات والأشكال والحركة",
+        "lead": "قاعدة 4، وزوايا متدرجة، وظل واحد لما يطفو، وثلاث مُدد."
+      },
+      "brand": {
+        "title": "الهوية",
+        "lead": "الشعار بثلاثة أشكال، والنقشة، العنصر المميّز الوحيد في الهوية."
+      },
+      "buttons": {
+        "title": "الأزرار والروابط",
+        "lead": "ارتفاع 40 و48 بكسل، ومنطقة لمس لا تقل عن 44 بكسل، وإطار تركيز ذهبي على الأخضر وأخضر على الفاتح."
+      },
+      "forms": {
+        "title": "النماذج",
+        "lead": "التسمية فوق الحقل، والمساعدة تحته، ورسائل خطأ توضّح ما يجب تصحيحه. عناصر أصلية دون جافاسكريبت."
+      },
+      "overlays": {
+        "title": "الطبقات العلوية",
+        "lead": "نافذة حوار، ولوحات، ونافذة منبثقة، وتلميح، وإشعار، مبنية على Radix."
+      },
+      "navigation": {
+        "title": "التنقل",
+        "lead": "تبويبات، وأكورديون، ومسار تنقل، وترقيم صفحات؛ الأسهم تتبع اتجاه القراءة."
+      },
+      "display": {
+        "title": "العرض",
+        "lead": "شارات، ووسوم، وصور رمزية، وتحميل، وحالات فارغة، وتقدّم، وتنبيهات، وأسعار، وجداول."
+      },
+      "prose": {
+        "title": "مقال",
+        "lead": "أنماط المحتوى التحريري القادم من نظام إدارة المحتوى، مع مربعَي «للتذكير» و«تنبيه»."
+      },
+      "patterns": {
+        "title": "الأنماط",
+        "lead": "الكتل التي يجمعها الموقع والمنصة، وتُغذّى بخصائص محددة الأنواع."
+      }
+    },
+    "states": {
+      "rest": "عادي",
+      "hover": "تمرير",
+      "focus": "تركيز",
+      "active": "نشط",
+      "disabled": "معطّل",
+      "error": "خطأ",
+      "loading": "تحميل",
+      "checked": "محدَّد",
+      "indeterminate": "جزئي",
+      "on": "مفعّل"
+    },
+    "colors": {
+      "brand": "ألوان الهوية",
+      "derived": "ألوان مشتقة",
+      "system": "حالات النظام",
+      "pairs": "أزواج التباين المُتحقَّق منها",
+      "pairsCaption": "يُختبر كل زوج آليًا (tests/a11y/contrast.test.ts).",
+      "fg": "المقدمة",
+      "bg": "الخلفية",
+      "use": "الاستخدام",
+      "ratio": "النسبة",
+      "minimum": "الحد الأدنى",
+      "uses": {
+        "text": "نص",
+        "large": "عنوان ≥ 24 بكسل",
+        "ui": "عنصر رسومي"
+      },
+      "roles": {
+        "green-900": "الواجهة الرئيسية، المناطق الداكنة",
+        "green-800": "تمرير الزر الأساسي",
+        "green-700": "اللون المؤسسي",
+        "green-50": "التحديد، حالة نشطة خفيفة",
+        "gold-700": "ذهبي للنص على الفاتح",
+        "gold-500": "إبراز، النقشة، الزر الذهبي",
+        "gold-200": "التقدّم، الشارات",
+        "sand-300": "الشهادات، المربعات",
+        "sand-100": "خلفية مربع خفيفة",
+        "paper": "خلفية الصفحة",
+        "ink": "النص الرئيسي",
+        "ink-muted": "نص ثانوي",
+        "ink-subtle": "بيانات وصفية",
+        "line": "خطوط وحدود",
+        "line-strong": "حدود الحقول",
+        "danger": "خطأ",
+        "danger-50": "خلفية الخطأ",
+        "warning": "تنبيه",
+        "warning-50": "خلفية التنبيه",
+        "info": "معلومة",
+        "info-50": "خلفية المعلومة"
+      }
+    },
+    "typography": {
+      "headline": "التمويل الإسلامي، بإتقان وامتثال.",
+      "sentence": "تتحقق عمليات التدقيق لدينا من مطابقة منتجاتكم لمعايير أيوفي وتنظيمات كوباك.",
+      "body": "مكتب يدرّب ويدقّق ويرافق البنوك وشركات التأمين والمؤسسات في منطقة سيماك في مشاريع التمويل التشاركي، بصرامة وشفافية.",
+      "range": "{min}–{max} بكسل",
+      "fixed": "{size} بكسل",
+      "scale": {
+        "display": "عنوان الواجهة الرئيسية",
+        "h1": "عنوان الصفحة",
+        "h2": "قسم",
+        "h3": "قسم فرعي، عنوان بطاقة",
+        "h4": "عنوان وسيط",
+        "body-lg": "مقدمة",
+        "body": "نص جارٍ",
+        "small": "بيانات وصفية",
+        "caption": "ملاحظات، تعليقات"
+      },
+      "numerals": "أرقام جدولية",
+      "italic": "الخط المائل مخصص للاقتباسات والشهادات."
+    },
+    "spacing": {
+      "scale": "سلّم المسافات (قاعدة 4)",
+      "radii": "الزوايا",
+      "radius": {
+        "media": "الوسائط",
+        "control": "عناصر التحكم",
+        "panel": "اللوحات، الحوارات",
+        "pill": "الوسوم"
+      },
+      "shadow": "الظل: لما يطفو فقط",
+      "shadowSample": "قائمة، حوار، لوحة الشراء",
+      "motion": "الحركة",
+      "durations": {
+        "hover": "تمرير",
+        "menu": "قائمة، أكورديون",
+        "panel": "حوار، لوحة",
+        "trame": "رسم النقشة (مرة واحدة)"
+      },
+      "easing": "المنحنى القياسي:",
+      "hoverMe": "مرّر المؤشر لرؤية المدة"
+    },
+    "brand": {
+      "logoColor": "ملوّن على خلفية فاتحة",
+      "logoInverse": "أبيض على الأخضر",
+      "logoSymbol": "الرمز وحده",
+      "logoTodo": "شعار مؤقت: في انتظار الملف الرسمي (TODO client).",
+      "trameHero": "ذهبي على green-900: يُرسم مرة واحدة عند التحميل ثم يثبت",
+      "trameLight": "ذهبي بنسبة 12٪ على الفاتح: علامة مائية",
+      "trameFragment": "جزء: الحالات الفارغة، فواصل الأقسام"
+    },
+    "buttons": {
+      "primary": "أساسي",
+      "secondary": "ثانوي",
+      "gold": "ذهبي، على الأخضر فقط",
+      "outlineLight": "إطار فاتح، على الأخضر",
+      "ghost": "ثالثي",
+      "sizes": "الأحجام",
+      "sizeMd": "40 بكسل",
+      "sizeLg": "48 بكسل",
+      "primaryLabel": "تصفّح الدورات",
+      "secondaryLabel": "اطلب تدقيقًا",
+      "goldLabel": "احجز موعدًا",
+      "ghostLabel": "إلغاء",
+      "iconButtons": "أزرار الأيقونات",
+      "iconLabel": "مشاركة",
+      "links": "الروابط",
+      "inlineLink": "اطّلع على <link>البرنامج التفصيلي</link> قبل التسجيل.",
+      "standaloneLink": "عرض الكتالوج كاملًا",
+      "withIcon": "تنزيل البرنامج"
+    },
+    "forms": {
+      "name": "الاسم الكامل",
+      "namePlaceholder": "أميناتو بيلو",
+      "email": "البريد الإلكتروني",
+      "emailHint": "نردّ خلال يومَي عمل.",
+      "emailError": "أدخل بريدًا إلكترونيًا كاملًا، مثل name@entreprise.cm.",
+      "organization": "المؤسسة",
+      "message": "احتياجك",
+      "messageHint": "السياق، والموعد النهائي، وعدد الأشخاص المعنيين.",
+      "need": "نوع الطلب",
+      "needPlaceholder": "اختر نوع الطلب",
+      "needs": {
+        "audit": "تدقيق الامتثال",
+        "advisory": "الاستشارة والمرافقة",
+        "training": "تدريب المؤسسات",
+        "partnership": "شراكة"
+      },
+      "consent": "أوافق على أن تتواصل معي أمانة للاستشارات بشأن طلبي.",
+      "consentHint": "لا تُباع بياناتك أبدًا.",
+      "newsletter": "تلقّي النشرة الإخبارية",
+      "themes": "المواضيع المتابَعة",
+      "channel": "قناة التواصل المفضّلة",
+      "channels": {
+        "phone": "الهاتف",
+        "email": "البريد الإلكتروني",
+        "whatsapp": "واتساب"
+      },
+      "dataSaver": "توفير البيانات",
+      "dataSaverHint": "فيديو بجودة منخفضة، والنص المكتوب أولًا.",
+      "steps": {
+        "need": "احتياجك",
+        "organization": "مؤسستك",
+        "contact": "بيانات الاتصال"
+      },
+      "stepperAt": "المرحلة الثانية جارية"
+    },
+    "overlays": {
+      "openDialog": "فتح الحوار",
+      "dialogTitle": "تأكيد التسجيل",
+      "dialogDescription": "أنت تسجّل في ندوة 14 نوفمبر حول هيكلة الصكوك.",
+      "dialogBody": "سيصلك رابط الاتصال بالبريد الإلكتروني قبل يوم.",
+      "confirm": "تأكيد",
+      "cancel": "إلغاء",
+      "sheetStart": "لوحة جهة البداية",
+      "sheetEnd": "لوحة جهة النهاية",
+      "sheetBottom": "اللوحة السفلية",
+      "sheetTitle": "تصفية الكتالوج",
+      "sheetBody": "الموضوع والمستوى والمدة والسعر: تُطبَّق عوامل التصفية فور إغلاق اللوحة.",
+      "popoverTrigger": "ما هو التكافل؟",
+      "popoverTitle": "التكافل",
+      "popoverBody": "تأمين قائم على التعاون وتقاسم المخاطر، متوافق مع مبادئ التمويل الإسلامي.",
+      "tooltipLabel": "تنزيل البرنامج",
+      "tooltip": "PDF، 240 كيلوبايت",
+      "toastTrigger": "أضف إلى السلة",
+      "toastTitle": "أُضيف إلى السلة",
+      "toastDescription": "مدخل إلى التمويل الإسلامي",
+      "toastErrorTrigger": "محاكاة خطأ",
+      "toastErrorTitle": "لم يكتمل الدفع",
+      "toastErrorDescription": "لم يؤكّد مشغّل الدفع عبر الهاتف المحمول. أعد المحاولة أو اختر وسيلة أخرى."
+    },
+    "navigation": {
+      "tabsLabel": "محتويات الدرس",
+      "tabs": {
+        "transcript": "النص المكتوب",
+        "resources": "الموارد",
+        "notes": "الملاحظات"
+      },
+      "tabPanels": {
+        "transcript": "في هذا الدرس، نميّز بين المرابحة والبيع بالتقسيط التقليدي.",
+        "resources": "بطاقة ملخّص (PDF) ومسرد للمصطلحات المستخدمة.",
+        "notes": "ملاحظاتك خاصة وتُحفظ تلقائيًا."
+      },
+      "accordion": "أكورديون",
+      "breadcrumb": "مسار التنقل",
+      "pagination": "ترقيم الصفحات",
+      "breadcrumbDemo": "مسار التنقل (مثال)"
+    },
+    "display": {
+      "badges": "الشارات",
+      "badge": {
+        "freePreview": "مقتطف مجاني",
+        "new": "جديد",
+        "paid": "مدفوعة",
+        "pending": "قيد الانتظار",
+        "overdue": "متأخرة",
+        "webinar": "ندوة عبر الإنترنت",
+        "onGreen": "على الأخضر",
+        "dueSoon": "موعد قريب"
+      },
+      "tags": "الوسوم",
+      "tagThemes": {
+        "islamicFinance": "التمويل الإسلامي",
+        "takaful": "التكافل",
+        "compliance": "الامتثال",
+        "accounting": "المحاسبة"
+      },
+      "removeTag": "إزالة عامل التصفية {label}",
+      "avatars": "الصور الرمزية",
+      "skeleton": "التحميل",
+      "skeletonLabel": "جارٍ تحميل الدورات",
+      "empty": "حالة فارغة",
+      "emptyTitle": "ليست لديك دورات بعد.",
+      "emptyDescription": "تظهر الدورات التي تشتريها هنا، مع تقدّمك.",
+      "emptyAction": "تصفّح الكتالوج",
+      "progress": "التقدّم",
+      "progressCourse": "تقدّم الدورة",
+      "progressLicenses": "التراخيص المستخدمة",
+      "alerts": "التنبيهات",
+      "alert": {
+        "infoTitle": "جلسة مباشرة في 14 نوفمبر",
+        "infoText": "سيتوفر التسجيل بعد 48 ساعة من الجلسة.",
+        "successTitle": "تم إرسال الطلب",
+        "successText": "سيردّ عليك مستشار خلال يومَي عمل.",
+        "warningTitle": "ترخيص على وشك الانتهاء",
+        "warningText": "ينتهي ترخيص مؤسستك خلال 7 أيام.",
+        "dangerTitle": "تعذّر الإرسال",
+        "dangerText": "انقطع الاتصال. أجوبتك محفوظة: أعد المحاولة."
+      },
+      "prices": "الأسعار",
+      "table": "جدول",
+      "tableLabel": "متابعة الموظفين",
+      "tableCaption": "رتّب حسب العمود؛ على الهاتف، يبقى العمود الأول ظاهرًا أثناء التمرير.",
+      "columns": {
+        "member": "الموظف",
+        "team": "الفريق",
+        "capsules": "الكبسولات المسندة",
+        "progress": "التقدّم",
+        "score": "متوسط النتيجة",
+        "activity": "آخر نشاط"
+      },
+      "teams": {
+        "compliance": "الامتثال",
+        "front": "الواجهة الأمامية",
+        "back": "المكتب الخلفي"
+      },
+      "activity": {
+        "today": "اليوم",
+        "yesterday": "أمس",
+        "lastWeek": "منذ 6 أيام"
+      }
+    },
+    "prose": {
+      "title": "فهم المرابحة",
+      "intro": "المرابحة بيع بهامش ربح معلوم: يشتري البنك سلعة ثم يبيعها للعميل بسعر متفق عليه يُدفع لاحقًا. وخلافًا للقرض بفائدة، يأتي ربح البنك من سلعة حقيقية.",
+      "h2": "شروط الصحة",
+      "p1": "يُتحقق من ثلاثة شروط أثناء تدقيق الامتثال:",
+      "li1": "أن يتملّك البنك السلعة فعلًا قبل بيعها؛",
+      "li2": "أن يُحدَّد الهامش في العقد ولا يتغيّر؛",
+      "li3": "ألّا تعود أي غرامة تأخير بالنفع على البنك.",
+      "h3": "مراحل العملية",
+      "ol1": "يعبّر العميل عن حاجته ويوقّع وعدًا بالشراء.",
+      "ol2": "يشتري البنك السلعة من المورّد.",
+      "ol3": "يبيع البنك السلعة للعميل بالهامش المتفق عليه.",
+      "quote": "الامتثال ليس قيدًا يُضاف إلى المنتج: إنه بنيته ذاتها.",
+      "quoteCite": "لجنة الامتثال في أمانة للاستشارات",
+      "tableLabel": "مقارنة بين المرابحة والقرض التقليدي",
+      "tableHead1": "المعيار",
+      "tableHead2": "المرابحة",
+      "tableHead3": "القرض التقليدي",
+      "row1": "العائد",
+      "row1a": "هامش تجاري ثابت",
+      "row1b": "فائدة على رأس المال",
+      "row2": "الأصل الضمني",
+      "row2a": "إلزامي",
+      "row2b": "غير مطلوب",
+      "keyPoint": "تكافئ المرابحة بيعًا حقيقيًا، لا مرور الزمن. إذا لم يتملّك البنك السلعة قط، فالعملية غير متوافقة.",
+      "warning": "يقدّم هذا المحتوى مبادئ عامة. وهو ليس فتوى ولا نصيحة مالية شخصية."
+    },
+    "patterns": {
+      "header": "الترويسة",
+      "headerNote": "ترويسة هذه الصفحة هي المكوّن الحقيقي: شفافة فوق الواجهة الخضراء، ومعتمة بعد التمرير. تحت 1280 بكسل، درج بملء الشاشة.",
+      "pillarIndex": "فهرس الأقسام",
+      "courseCards": "بطاقات الدورات",
+      "capsules": "كبسولات المؤسسات",
+      "capsulesLabel": "كبسولات المكتبة",
+      "purchase": "لوحة الشراء",
+      "stats": "أرقام رئيسية",
+      "testimonial": "شهادة",
+      "faq": "الأسئلة الشائعة",
+      "cta": "شريط الدعوة إلى الإجراء",
+      "service": "قالب الخدمة (مقتطف)",
+      "whatsapp": "زر واتساب العائم ظاهر أسفل الشاشة، في جهة نهاية السطر.",
+      "footer": "تُختتم هذه الصفحة بالتذييل الحقيقي."
+    },
+    "demo": {
+      "nav": {
+        "training": "التدريب",
+        "trainingTitle": "التدريب",
+        "trainingSummary": "دورات عبر الإنترنت للأفراد، وكبسولات وتراخيص للمؤسسات.",
+        "audit": "التدقيق",
+        "auditTitle": "التدقيق والامتثال",
+        "auditSummary": "التحقق من مطابقة منتجاتكم وعقودكم وإجراءاتكم لمعايير التمويل الإسلامي.",
+        "advisory": "الاستشارة",
+        "advisoryTitle": "الاستشارة والمرافقة",
+        "advisorySummary": "هيكلة عرض، وفتح نافذة إسلامية، وتأسيس لجنة امتثال.",
+        "takaful": "التكافل",
+        "takafulTitle": "التكافل والتمويل",
+        "takafulSummary": "منتجات تأمين وتمويل متوافقة، للأفراد والمؤسسات.",
+        "resources": "الموارد",
+        "about": "من نحن",
+        "offers": {
+          "courses": "كتالوج الدورات",
+          "coursesDescription": "من الأساسيات إلى هيكلة المنتجات.",
+          "business": "كبسولات المؤسسات",
+          "businessDescription": "صيغ من 3 إلى 10 دقائق، وتراخيص لكل مقعد.",
+          "inPerson": "جلسات حضورية",
+          "inPersonDescription": "دوالا، وياوندي، ومباشرة عبر الإنترنت.",
+          "products": "تدقيق المنتجات",
+          "productsDescription": "تحليل العقود والتدفقات المالية.",
+          "window": "تدقيق النافذة الإسلامية",
+          "windowDescription": "فصل الأموال، والحوكمة، والتقارير.",
+          "followUp": "متابعة الامتثال",
+          "followUpDescription": "مراجعة دورية وتقرير إلى اللجنة.",
+          "structuring": "هيكلة العرض",
+          "committee": "لجنة الامتثال",
+          "policies": "السياسات والإجراءات",
+          "takafulProducts": "منتجات التكافل",
+          "financing": "حلول التمويل",
+          "takafulFaq": "أسئلة حول التكافل"
+        },
+        "featuredKind": "دورة عبر الإنترنت",
+        "featuredTitle": "مدخل إلى التمويل الإسلامي",
+        "featuredDescription": "اثنا عشر درسًا لفهم المبادئ والعقود الأساسية.",
+        "featuredCta": "عرض الدورة",
+        "featuredAuditKind": "دليل مجاني",
+        "featuredAuditTitle": "الاستعداد لأول تدقيق شرعي",
+        "featuredAuditCta": "قراءة الدليل"
+      },
+      "pillars": {
+        "trainingSummary": "دورات عبر الإنترنت للفهم والممارسة، وكبسولات لتدريب فرقكم على نطاق واسع.",
+        "auditSummary": "نظرة مستقلة على امتثال منتجاتكم وعقودكم وإجراءاتكم.",
+        "advisorySummary": "من الفكرة إلى الاعتماد: نهيكل عروضكم وحوكمتكم.",
+        "takafulSummary": "حلول تأمين وتمويل قائمة على التعاون وتقاسم المخاطر."
+      },
+      "courses": {
+        "theme1": "التمويل الإسلامي",
+        "title1": "مدخل إلى التمويل الإسلامي",
+        "theme2": "التكافل",
+        "title2": "تصميم منتج تكافلي متوافق",
+        "theme3": "الامتثال",
+        "title3": "إدارة لجنة الامتثال الشرعي"
+      },
+      "instructors": {
+        "one": "أميناتو بيلو",
+        "two": "إبراهيم انجاي",
+        "three": "مريم فوتسو"
+      },
+      "capsules": {
+        "c1": "التعرّف على عملية قائمة على الفائدة",
+        "c1Summary": "ثلاث إشارات يجب رصدها في عقد تمويل.",
+        "c2": "شرح المرابحة للعميل",
+        "c2Summary": "الكلمات المناسبة في الفرع، دون مصطلحات معقدة.",
+        "c3": "معالجة مطالبة تكافلية",
+        "c3Summary": "من الاتصال الأول إلى التعويض.",
+        "roles": {
+          "compliance": "الامتثال",
+          "front": "الواجهة الأمامية",
+          "back": "المكتب الخلفي",
+          "management": "الإدارة"
+        }
+      },
+      "purchase": {
+        "title": "مدخل إلى التمويل الإسلامي",
+        "buy": "اشترِ الدورة",
+        "addToCart": "أضف إلى السلة",
+        "note": "الدفع عبر MTN وOrange Money، أو البطاقة البنكية، أو التحويل.",
+        "include1": "12 درسًا مصورًا، 3 س 20 د",
+        "include2": "اختبارات مصحّحة وبطاقات ملخّص",
+        "include3": "شهادة قابلة للتحقق برمز QR",
+        "include4": "وصول لمدة 12 شهرًا"
+      },
+      "stats": {
+        "s1": "منذ 2019، درّبت أمانة للاستشارات ",
+        "l1": "مهنيًا",
+        "s2": "، ورافقت ",
+        "l2": "مؤسسة",
+        "s3": "، وأجرت ",
+        "l3": "عملية تدقيق امتثال",
+        "s4": " في منطقة سيماك."
+      },
+      "testimonial": {
+        "quote": "منحنا التدقيق خارطة طريق واضحة. وبعد ستة أشهر، اعتُمدت نافذتنا الإسلامية.",
+        "author": "جان بول مبارغا",
+        "role": "مدير العمليات",
+        "organization": "بنك شريك (TODO client)"
+      },
+      "faq": {
+        "q1": "كم يستغرق تدقيق الامتثال؟",
+        "a1": "بين ثلاثة وثمانية أسابيع حسب النطاق: عدد المنتجات والعقود والفروع.\n\nيرد جدول زمني دقيق في العرض.",
+        "q2": "هل تُصدرون فتاوى؟",
+        "a2": "لا. نحن نُعلِم وندرّب وندقّق. أما الآراء الشرعية فمن اختصاص لجنة الامتثال في كل مؤسسة.",
+        "q3": "هل يمكن دفع ثمن دورة عبر الهاتف المحمول؟",
+        "a3": "نعم، نقبل MTN Mobile Money وOrange Money، وكذلك البطاقة البنكية والتحويل."
+      },
+      "cta": {
+        "title": "لنتحدّث عن مشروعك",
+        "text": "لقاء أول مدته 30 دقيقة، دون التزام، لتحديد احتياجك.",
+        "primary": "احجز موعدًا",
+        "secondary": "اطلب عرض سعر"
+      },
+      "service": {
+        "breadcrumbHome": "الرئيسية",
+        "breadcrumbPillar": "التدقيق والامتثال",
+        "breadcrumbPage": "تدقيق النافذة الإسلامية",
+        "title": "تدقيق النافذة الإسلامية",
+        "lead": "التحقق من أن نافذتكم الإسلامية تحترم فصل الأموال والحوكمة والتقارير المطلوبة.",
+        "primary": "اطلب تدقيقًا",
+        "step1": "التأطير",
+        "step1Text": "النطاق، والمحاورون، والجدول الزمني.",
+        "step2": "المراجعة الوثائقية",
+        "step2Text": "العقود والإجراءات والتدفقات المحاسبية.",
+        "step3": "المقابلات",
+        "step3Text": "فرق الأعمال والامتثال والإدارة.",
+        "step4": "التقرير",
+        "step4Text": "الملاحظات، والمخاطر، وخطة عمل مرتّبة حسب الأولوية."
+      },
+      "footer": {
+        "training": "التدريب",
+        "services": "الخدمات",
+        "company": "أمانة للاستشارات",
+        "catalogue": "كتالوج الدورات",
+        "business": "عرض المؤسسات",
+        "verify": "التحقق من شهادة",
+        "audit": "التدقيق والامتثال",
+        "advisory": "الاستشارة والمرافقة",
+        "takaful": "التكافل والتمويل",
+        "about": "من نحن",
+        "resources": "الموارد",
+        "contact": "اتصل بنا",
+        "address1": "أكوا، دوالا (TODO client)",
+        "address2": "الكاميرون",
+        "phone": "+237 6XX XX XX XX",
+        "email": "contact@amana-conseil.cm",
+        "whatsapp": "راسلنا عبر واتساب",
+        "legal": "الإشعارات القانونية",
+        "terms": "شروط البيع",
+        "privacy": "الخصوصية",
+        "newsletterEmail": "البريد الإلكتروني",
+        "newsletterSubmit": "اشترك"
+      }
+    }
+  },
+  "site": {
+    "chrome": {
+      "summaries": {
+        "formation": "TODO(translation) Cours en ligne avec certificat pour les particuliers, capsules métiers pour les entreprises.",
+        "audit": "TODO(translation) Une vérification indépendante de vos produits, contrats et processus.",
+        "conseil": "TODO(translation) Structurer, lancer et piloter une activité de finance islamique.",
+        "takaful": "TODO(translation) Comprendre et concevoir des solutions d’assurance et de financement conformes.",
+        "ressources": "TODO(translation) Articles, guides, glossaire et webinaires pour comprendre la finance islamique."
+      },
+      "short": {
+        "formation": "TODO(translation) Formation",
+        "audit": "TODO(translation) Audit",
+        "conseil": "TODO(translation) Conseil",
+        "takaful": "TODO(translation) Takaful",
+        "ressources": "TODO(translation) Ressources",
+        "a-propos": "TODO(translation) À propos"
+      },
+      "whatsapp": {
+        "default": "TODO(translation) Bonjour Amana Conseil, j’aimerais avoir des informations.",
+        "formation": "TODO(translation) Bonjour, j’aimerais des informations sur vos formations en finance islamique.",
+        "audit": "TODO(translation) Bonjour, j’aimerais échanger au sujet d’un audit de conformité charia.",
+        "conseil": "TODO(translation) Bonjour, j’aimerais être accompagné sur un projet de finance islamique.",
+        "takaful": "TODO(translation) Bonjour, j’aimerais être rappelé au sujet du takaful.",
+        "ressources": "TODO(translation) Bonjour, j’ai une question au sujet de vos ressources.",
+        "devis": "TODO(translation) Bonjour, j’aimerais obtenir un devis."
+      },
+      "whatsappLabel": "TODO(translation) Écrire sur WhatsApp"
+    },
+    "pillars": {
+      "title": "TODO(translation) Nos expertises",
+      "formation": {
+        "title": "TODO(translation) Formation",
+        "summary": "TODO(translation) Des cours en ligne pour les particuliers et des capsules courtes pour les équipes, avec certificat vérifiable.",
+        "action": "TODO(translation) S’abonner aux nouveautés",
+        "offers": {
+          "courses": "TODO(translation) Cours en ligne",
+          "business": "TODO(translation) Offre entreprises",
+          "inPerson": "TODO(translation) Sessions en présentiel"
+        }
+      },
+      "audit": {
+        "title": "TODO(translation) Audit et conformité",
+        "summary": "TODO(translation) Une vérification indépendante de vos produits, contrats et processus, selon les normes de référence.",
+        "action": "TODO(translation) Demander un devis d’audit"
+      },
+      "conseil": {
+        "title": "TODO(translation) Conseil et accompagnement",
+        "summary": "TODO(translation) De la conception d’un produit à l’ouverture d’une fenêtre islamique, un accompagnement pas à pas.",
+        "action": "TODO(translation) Prendre rendez-vous"
+      },
+      "takaful": {
+        "title": "TODO(translation) Takaful et solutions financières",
+        "summary": "TODO(translation) Comprendre, concevoir et choisir des solutions d’assurance et de financement conformes.",
+        "action": "TODO(translation) Être rappelé par un conseiller"
+      }
+    },
+    "blocks": {
+      "partners": "TODO(translation) Ils nous font confiance",
+      "contactUs": "TODO(translation) Nous contacter",
+      "appointment": "TODO(translation) Prendre rendez-vous",
+      "requestQuote": "TODO(translation) Demander un devis"
+    },
+    "cases": {
+      "home": "TODO(translation) Accueil",
+      "title": "TODO(translation) Cas clients",
+      "lead": "TODO(translation) Des missions d’audit, de conseil et de formation racontées de l’enjeu aux résultats. Les clients sont anonymisés tant qu’ils n’ont pas autorisé l’affichage de leur nom.",
+      "metaDescription": "TODO(translation)",
+      "listTitle": "TODO(translation) Toutes les études de cas",
+      "empty": "TODO(translation) Aucune étude de cas n’est encore publiée.",
+      "anonymous": "TODO(translation) Client anonymisé",
+      "client": "TODO(translation) Client",
+      "sector": "TODO(translation) Secteur",
+      "services": "TODO(translation) Expertises mobilisées",
+      "keyFigures": "TODO(translation) Chiffres clés de la mission",
+      "challenge": "TODO(translation) L’enjeu",
+      "approach": "TODO(translation) Notre démarche",
+      "results": "TODO(translation) Les résultats",
+      "ctaTitle": "TODO(translation) Un projet comparable ?",
+      "ctaText": "TODO(translation) Décrivez-nous votre situation : nous vous proposons une démarche et un calendrier.",
+      "ctaPrimary": "TODO(translation) Demander un devis",
+      "ctaSecondary": "TODO(translation) Prendre rendez-vous"
+    },
+    "team": {
+      "qualifications": "TODO(translation) Qualifications",
+      "linkedin": "TODO(translation) Profil LinkedIn de {name}"
+    },
+    "resources": {
+      "home": "TODO(translation) Accueil",
+      "title": "TODO(translation) Ressources",
+      "lead": "TODO(translation) Articles, guides pratiques, glossaire et webinaires pour comprendre la finance et l’assurance islamiques, sans jargon.",
+      "jumpTo": "TODO(translation) Aller à une rubrique",
+      "readingTime": "TODO(translation) {minutes, plural, one {# min de lecture} other {# min de lecture}}",
+      "pages": "TODO(translation) {count, plural, one {# page} other {# pages}}",
+      "kinds": {
+        "articles": "TODO(translation) Article",
+        "guides": "TODO(translation) Guide",
+        "webinars": "TODO(translation) Webinaire"
+      },
+      "sections": {
+        "articles": "TODO(translation) Articles récents",
+        "guides": "TODO(translation) Guides à télécharger",
+        "webinars": "TODO(translation) Webinaires",
+        "glossary": "TODO(translation) Glossaire",
+        "cases": "TODO(translation) Cas clients"
+      },
+      "allResources": "TODO(translation) Toutes les ressources",
+      "allArticles": "TODO(translation) Tous les articles",
+      "allGuides": "TODO(translation) Tous les guides",
+      "allWebinars": "TODO(translation) Tous les webinaires",
+      "allTerms": "TODO(translation) Parcourir le glossaire",
+      "glossaryLead": "TODO(translation) {count, plural, one {# terme expliqué} other {# termes expliqués}} simplement, de mourabaha à takaful, avec leur graphie arabe."
+    },
+    "guides": {
+      "title": "TODO(translation) Guides",
+      "lead": "TODO(translation) Des guides pratiques à télécharger gratuitement, contre une adresse e-mail.",
+      "empty": "TODO(translation) Aucun guide n’est encore publié.",
+      "getGuide": "TODO(translation) Recevoir le guide",
+      "format": "TODO(translation) {count, plural, one {Guide PDF de # page} other {Guide PDF de # pages}}",
+      "formTitle": "TODO(translation) Recevoir le guide"
+    },
+    "formation": {
+      "newsletterTitle": "كن أول من يعلم بالدورات الجديدة",
+      "newsletterText": "رسالة عند كل دورة أو كبسولة جديدة، ثم نشرة واحدة شهريًا على الأكثر. إلغاء الاشتراك بنقرة."
+    },
+    "disclaimer": {
+      "title": "TODO(translation) Information générale",
+      "text": "TODO(translation) Ces contenus ont une vocation d’information et de formation. Ils ne constituent ni un conseil financier personnalisé ni un avis religieux.",
+      "more": "TODO(translation) Lire l’avertissement complet"
+    },
+    "services": {
+      "home": "TODO(translation) Accueil",
+      "anonymousClient": "TODO(translation) Client anonymisé",
+      "problemTitle": "TODO(translation) Votre situation",
+      "ctaTitle": "TODO(translation) Parlons de votre besoin",
+      "ctaText": "TODO(translation) Laissez-nous vos coordonnées : un consultant vous répond sous deux jours ouvrés.",
+      "audit": {
+        "title": "TODO(translation) Audit et conformité",
+        "metaDescription": "TODO(translation) Audit de conformité charia d’établissements, de fenêtres islamiques et de produits financiers, selon les normes AAOIFI et la réglementation CEMAC.",
+        "lead": "TODO(translation) Une vérification indépendante de vos produits, contrats et processus au regard des principes de la finance islamique et des normes de référence.",
+        "action": "TODO(translation) Demander un devis d’audit",
+        "problemTitle": "TODO(translation) Pourquoi un audit ?",
+        "problem1": "TODO(translation) Un produit présenté comme conforme engage la réputation de l’établissement. Sans vérification indépendante, un écart entre la promesse et la pratique peut passer inaperçu jusqu’à ce qu’un client ou le régulateur le relève.",
+        "problem2": "TODO(translation) L’audit donne à la direction et au comité de conformité une vision claire des écarts, de leur gravité et des corrections à apporter.",
+        "ctaTitle": "TODO(translation) Planifier un audit",
+        "ctaText": "TODO(translation) Décrivez votre établissement et le périmètre envisagé : nous revenons vers vous avec une proposition."
+      },
+      "conseil": {
+        "title": "TODO(translation) Conseil et accompagnement",
+        "metaDescription": "TODO(translation) Structuration de produits, ouverture de fenêtre islamique, politiques et procédures, comité de conformité : un accompagnement pas à pas en zone CEMAC.",
+        "lead": "TODO(translation) De la conception d’un produit à l’ouverture d’une fenêtre islamique, nous accompagnons les établissements et les porteurs de projets à chaque étape.",
+        "action": "TODO(translation) Prendre rendez-vous",
+        "problemTitle": "TODO(translation) Ce que nos clients nous disent",
+        "problem1": "TODO(translation) La demande de solutions conformes progresse, mais les compétences pour les concevoir, les documenter et les piloter restent rares en Afrique centrale.",
+        "problem2": "TODO(translation) Nous apportons une méthode éprouvée, des modèles de documents et un transfert de compétences pour que vos équipes deviennent autonomes.",
+        "ctaTitle": "TODO(translation) Un projet à structurer ?",
+        "ctaText": "TODO(translation) Un premier échange de trente minutes, gratuit et sans engagement, pour comprendre votre besoin."
+      },
+      "takaful": {
+        "title": "TODO(translation) Takaful et finance",
+        "metaDescription": "TODO(translation) Comprendre le takaful et les solutions de financement islamique : conception de produits, takaful entreprises, financement des PME. FAQ et accompagnement.",
+        "lead": "TODO(translation) Le takaful est une assurance fondée sur l’entraide et le partage des risques. Nous aidons les assureurs, les entreprises et les particuliers à le comprendre et à le mettre en œuvre.",
+        "action": "TODO(translation) Être rappelé par un conseiller",
+        "problemTitle": "TODO(translation) Le takaful, en bref",
+        "problem1": "TODO(translation) Dans le takaful, les participants mettent en commun leurs contributions dans un fonds qui leur appartient. L’opérateur gère ce fonds contre une rémunération transparente ; les excédents peuvent être redistribués.",
+        "problem2": "TODO(translation) Encore peu connu en zone CEMAC, il répond à une demande réelle de protection conforme. Nous expliquons ses mécanismes et accompagnons sa conception.",
+        "ctaTitle": "TODO(translation) Être rappelé par un conseiller",
+        "ctaText": "TODO(translation) Laissez vos coordonnées : un conseiller vous rappelle pour répondre à vos questions."
+      }
+    },
+    "articles": {
+      "title": "TODO(translation) Articles",
+      "titleCategory": "TODO(translation) Articles : {category}",
+      "lead": "TODO(translation) Analyses et explications pédagogiques sur la finance et l’assurance islamiques, la conformité et la réglementation.",
+      "categories": "TODO(translation) Catégories",
+      "allCategories": "TODO(translation) Toutes les catégories",
+      "empty": "TODO(translation) Aucun article dans cette catégorie pour le moment.",
+      "toc": "TODO(translation) Sommaire",
+      "by": "TODO(translation) Par {authors}",
+      "aboutAuthor": "TODO(translation) À propos de l’auteur",
+      "writtenBy": "TODO(translation) Article rédigé par",
+      "related": "TODO(translation) À lire aussi",
+      "newsletterTitle": "TODO(translation) Recevoir les prochains articles",
+      "newsletterText": "TODO(translation) Une lettre par mois : nouveaux articles, actualité réglementaire et ressources pratiques. Désinscription en un clic."
+    },
+    "share": {
+      "title": "TODO(translation) Partager cet article",
+      "on": "TODO(translation) Partager sur {network} (nouvel onglet)"
+    },
+    "glossary": {
+      "title": "TODO(translation) Glossaire",
+      "lead": "TODO(translation) Les termes de la finance et de l’assurance islamiques expliqués simplement, avec leur translittération et leur graphie arabe.",
+      "letters": "TODO(translation) Lettres de l’alphabet",
+      "arabic": "TODO(translation) Graphie arabe",
+      "transliteration": "TODO(translation) Translittération",
+      "related": "TODO(translation) Termes liés",
+      "back": "TODO(translation) Retour au glossaire"
+    },
+    "webinars": {
+      "title": "TODO(translation) Webinaires",
+      "lead": "TODO(translation) Des sessions en ligne d’une heure pour approfondir un sujet et poser vos questions à nos experts.",
+      "upcoming": "TODO(translation) Prochains webinaires",
+      "noUpcoming": "TODO(translation) Aucun webinaire programmé pour le moment",
+      "noUpcomingText": "TODO(translation) Inscrivez-vous à la lettre d’information pour être prévenu des prochaines sessions.",
+      "replays": "TODO(translation) Replays",
+      "replaysLead": "TODO(translation) Les sessions passées, disponibles sur demande.",
+      "speakers": "TODO(translation) Avec {names}",
+      "register": "TODO(translation) S’inscrire",
+      "askReplay": "TODO(translation) Demander le replay"
+    },
+    "contact": {
+      "home": "TODO(translation) Accueil",
+      "title": "TODO(translation) Contact",
+      "lead": "TODO(translation) Une question, un projet, une demande de formation ? Écrivez-nous : un consultant vous répond sous deux jours ouvrés.",
+      "formTitle": "TODO(translation) Nous écrire",
+      "detailsTitle": "TODO(translation) Coordonnées",
+      "whatsapp": "TODO(translation) Écrire sur WhatsApp",
+      "whatsappMessage": "TODO(translation) Bonjour Amana Conseil, j’aimerais avoir des informations.",
+      "appointment": "TODO(translation) Prendre rendez-vous en ligne",
+      "quote": "TODO(translation) Demander un devis détaillé",
+      "map": "TODO(translation) Voir sur Google Maps",
+      "mapCaption": "TODO(translation) S’ouvre dans un nouvel onglet. TODO(client) : adresse exacte du cabinet."
+    },
+    "quote": {
+      "home": "TODO(translation) Accueil",
+      "title": "TODO(translation) Demander un devis",
+      "lead": "TODO(translation) Trois étapes, environ trois minutes. Plus votre demande est précise, plus notre proposition le sera.",
+      "asideTitle": "TODO(translation) Besoin d’en parler d’abord ?",
+      "asideText": "TODO(translation) Un premier échange de trente minutes, gratuit et sans engagement, permet souvent de clarifier le besoin.",
+      "asideAppointment": "TODO(translation) Prendre rendez-vous",
+      "asideContact": "TODO(translation) Poser une question"
+    },
+    "appointment": {
+      "home": "TODO(translation) Accueil",
+      "title": "TODO(translation) Prendre rendez-vous",
+      "lead": "TODO(translation) Choisissez le type d’entretien, puis un créneau dans notre agenda. L’agenda ne se charge qu’à votre demande.",
+      "howTitle": "TODO(translation) Comment ça se passe",
+      "step1": "TODO(translation) Vous choisissez un créneau ; la confirmation arrive par e-mail.",
+      "step2": "TODO(translation) Nous échangeons en visioconférence ou par téléphone.",
+      "step3": "TODO(translation) Vous recevez une proposition adaptée sous deux jours ouvrés, si besoin.",
+      "quote": "TODO(translation) Préférer un devis écrit",
+      "contact": "TODO(translation) Nous écrire"
+    },
+    "newsletter": {
+      "home": "TODO(translation) Accueil",
+      "title": "TODO(translation) Confirmer votre inscription",
+      "lead": "TODO(translation) Un clic pour confirmer que vous souhaitez recevoir notre lettre d’information. Vous pourrez vous désinscrire à tout moment."
+    },
+    "legal": {
+      "home": "TODO(translation) Accueil",
+      "updated": "TODO(translation) Mis à jour le",
+      "toc": "TODO(translation) Sommaire",
+      "pendingTitle": "TODO(translation) Document en cours de rédaction",
+      "pendingText": "TODO(translation) Ce document est en cours de validation juridique. Pour toute question, écrivez-nous.",
+      "contact": "TODO(translation) Nous contacter",
+      "titles": {
+        "mentions-legales": "TODO(translation) Mentions légales",
+        "cgv": "TODO(translation) Conditions générales de vente",
+        "cgu": "TODO(translation) Conditions d’utilisation",
+        "confidentialite": "TODO(translation) Politique de confidentialité",
+        "cookies": "TODO(translation) Cookies et mesure d’audience",
+        "remboursement": "TODO(translation) Politique de remboursement",
+        "avertissement": "TODO(translation) Avertissement"
+      }
+    },
+    "search": {
+      "home": "TODO(translation) Accueil",
+      "title": "TODO(translation) Recherche",
+      "formLabel": "TODO(translation) Rechercher sur le site",
+      "label": "TODO(translation) Que cherchez-vous ?",
+      "submit": "TODO(translation) Rechercher",
+      "hint": "TODO(translation) Ex. mourabaha, audit charia, takaful entreprise. Astuce : touche « / » pour rechercher depuis n’importe quelle page.",
+      "summary": "TODO(translation) {count, plural, =0 {Aucun résultat pour « {query} »} one {# résultat pour « {query} »} other {# résultats pour « {query} »}}",
+      "emptyTitle": "TODO(translation) Aucun résultat",
+      "emptyText": "TODO(translation) Vérifiez l’orthographe ou essayez un terme plus général. Le glossaire explique les principaux termes.",
+      "emptyAction": "TODO(translation) Parcourir le glossaire",
+      "kinds": {
+        "service": "TODO(translation) Expertises",
+        "page": "TODO(translation) Pages",
+        "article": "TODO(translation) Articles",
+        "glossary": "TODO(translation) Glossaire",
+        "course": "التدريبات"
+      }
+    }
+  },
+  "recovery": {
+    "notFoundTitle": "TODO(translation) Cette page est introuvable",
+    "notFoundText": "TODO(translation) Le lien est peut-être ancien ou mal saisi. Cherchez ce dont vous avez besoin ou rejoignez directement un pôle.",
+    "errorTitle": "TODO(translation) Un incident nous empêche d’afficher cette page",
+    "errorText": "TODO(translation) Ce n’est pas de votre fait. Réessayez dans un instant ; si le problème persiste, cherchez ou rejoignez un pôle.",
+    "retry": "TODO(translation) Réessayer",
+    "reference": "TODO(translation) Référence de l’incident : {digest}",
+    "searchLabel": "TODO(translation) Rechercher sur le site",
+    "searchSubmit": "TODO(translation) Rechercher",
+    "pillarsTitle": "TODO(translation) Ou rejoignez directement",
+    "pillars": {
+      "formation": "TODO(translation) Formation",
+      "audit": "TODO(translation) Audit et conformité",
+      "conseil": "TODO(translation) Conseil et accompagnement",
+      "takaful": "TODO(translation) Takaful et finance",
+      "ressources": "TODO(translation) Ressources",
+      "contact": "TODO(translation) Contact"
+    }
+  },
+  "forms": {
+    "choose": "TODO(translation) Choisir…",
+    "next": "TODO(translation) Continuer",
+    "previous": "TODO(translation) Étape précédente",
+    "turnstileError": "TODO(translation) La vérification anti-robot n’a pas pu se charger. Vérifiez votre connexion puis réessayez.",
+    "errors": {
+      "required": "TODO(translation) Ce champ est obligatoire.",
+      "email": "TODO(translation) Adresse e-mail invalide : vérifiez le format, par exemple nom@domaine.cm.",
+      "tooShort": "TODO(translation) Un peu court : ajoutez quelques précisions.",
+      "tooLong": "TODO(translation) Trop long : raccourcissez votre saisie.",
+      "phone": "TODO(translation) Numéro invalide : chiffres uniquement, avec l’indicatif, par exemple +237 6 00 00 00 00.",
+      "choice": "TODO(translation) Choisissez une option dans la liste.",
+      "consent": "TODO(translation) Cochez cette case pour que nous puissions traiter votre demande.",
+      "number": "TODO(translation) Indiquez un nombre entier, par exemple 25."
+    },
+    "submit": {
+      "invalid": {
+        "title": "TODO(translation) Certains champs sont à corriger",
+        "text": "TODO(translation) Les erreurs sont indiquées sous chaque champ concerné."
+      },
+      "rate-limited": {
+        "title": "TODO(translation) Trop d’envois en peu de temps",
+        "text": "TODO(translation) Par sécurité, patientez {minutes, plural, one {# minute} other {# minutes}} avant de réessayer."
+      },
+      "captcha": {
+        "title": "TODO(translation) Vérification anti-robot échouée",
+        "text": "TODO(translation) Rechargez la page puis réessayez. Si le problème persiste, écrivez-nous sur WhatsApp."
+      },
+      "server": {
+        "title": "TODO(translation) Votre demande n’a pas pu être enregistrée",
+        "text": "TODO(translation) Un incident technique nous en empêche. Réessayez dans un instant ou contactez-nous par téléphone."
+      },
+      "not-found": {
+        "title": "TODO(translation) Ce guide n’est plus disponible",
+        "text": "TODO(translation) Il a peut-être été retiré. Consultez la liste des guides disponibles."
+      }
+    },
+    "types": {
+      "contact": "TODO(translation) Question générale",
+      "audit": "TODO(translation) Audit de conformité",
+      "conseil": "TODO(translation) Conseil",
+      "accompagnement": "TODO(translation) Accompagnement de projet",
+      "formation-entreprise": "TODO(translation) Formation de vos équipes",
+      "takaful": "TODO(translation) Takaful et financement",
+      "partenariat": "TODO(translation) Partenariat"
+    },
+    "fields": {
+      "name": "TODO(translation) Nom et prénom",
+      "email": "TODO(translation) Adresse e-mail",
+      "emailHint": "TODO(translation) Nous l’utilisons uniquement pour vous répondre.",
+      "phone": "TODO(translation) Téléphone",
+      "phoneHint": "TODO(translation) Avec l’indicatif, par exemple +237 6 00 00 00 00.",
+      "organization": "TODO(translation) Organisation",
+      "jobTitle": "TODO(translation) Fonction",
+      "city": "TODO(translation) Ville"
+    },
+    "consent": {
+      "processing": "TODO(translation) J’accepte que mes informations soient utilisées pour traiter ma demande.",
+      "processingHint": "TODO(translation) Elles ne sont ni vendues ni transmises à des tiers.",
+      "newsletter": "TODO(translation) Je souhaite recevoir la lettre d’information d’Amana Conseil.",
+      "newsletterHint": "TODO(translation) Une lettre par mois au plus. Un e-mail de confirmation vous sera envoyé ; désinscription en un clic."
+    },
+    "interests": {
+      "formation": "TODO(translation) Formations",
+      "audit": "TODO(translation) Audit et conformité",
+      "takaful": "TODO(translation) Takaful",
+      "reglementaire": "TODO(translation) Actualité réglementaire"
+    },
+    "options": {
+      "organizationKind": {
+        "banque": "TODO(translation) Banque",
+        "microfinance": "TODO(translation) Établissement de microfinance",
+        "assurance": "TODO(translation) Assurance",
+        "entreprise": "TODO(translation) Entreprise",
+        "institution": "TODO(translation) Institution publique ou régulateur",
+        "association": "TODO(translation) Association ou ONG",
+        "particulier": "TODO(translation) Particulier"
+      },
+      "auditScope": {
+        "etablissement": "TODO(translation) L’ensemble de l’établissement",
+        "produit": "TODO(translation) Un ou plusieurs produits",
+        "fenetre": "TODO(translation) Une fenêtre islamique",
+        "processus": "TODO(translation) Des processus précis"
+      },
+      "projectStage": {
+        "idee": "TODO(translation) Idée à explorer",
+        "conception": "TODO(translation) En conception",
+        "lancement": "TODO(translation) Lancement prévu",
+        "existant": "TODO(translation) Activité existante à améliorer"
+      },
+      "trainingFormat": {
+        "en-ligne": "TODO(translation) En ligne",
+        "presentiel": "TODO(translation) En présentiel",
+        "mixte": "TODO(translation) Mixte"
+      },
+      "takafulAudience": {
+        "particulier": "TODO(translation) Pour moi ou ma famille",
+        "entreprise": "TODO(translation) Pour mon entreprise ou mes salariés"
+      },
+      "partnerKind": {
+        "institution": "TODO(translation) Institution ou régulateur",
+        "ecole": "TODO(translation) École ou université",
+        "media": "TODO(translation) Média",
+        "entreprise": "TODO(translation) Entreprise",
+        "autre": "TODO(translation) Autre"
+      },
+      "timeframe": {
+        "urgent": "TODO(translation) Dans le mois",
+        "trimestre": "TODO(translation) Dans les trois mois",
+        "semestre": "TODO(translation) Dans les six mois",
+        "indefini": "TODO(translation) Pas encore défini"
+      }
+    },
+    "quote": {
+      "steps": {
+        "type": "TODO(translation) Votre demande",
+        "context": "TODO(translation) Le contexte",
+        "contact": "TODO(translation) Vos coordonnées"
+      },
+      "headings": {
+        "0": "TODO(translation) Quel est l’objet de votre demande ?",
+        "1": "TODO(translation) Parlez-nous du contexte",
+        "2": "TODO(translation) Comment vous joindre ?"
+      },
+      "typeLegend": "TODO(translation) Type de demande",
+      "typeHints": {
+        "audit": "TODO(translation) Vérifier la conformité d’un établissement, d’une fenêtre ou d’un produit.",
+        "conseil": "TODO(translation) Structurer un produit, des politiques ou un comité de conformité.",
+        "accompagnement": "TODO(translation) Être accompagné de la conception au lancement d’une activité.",
+        "formation-entreprise": "TODO(translation) Former vos équipes : capsules, licences, sessions sur mesure.",
+        "takaful": "TODO(translation) Comprendre ou concevoir une solution takaful ou de financement.",
+        "partenariat": "TODO(translation) Proposer un partenariat institutionnel, académique ou média."
+      },
+      "fields": {
+        "organizationKind": "TODO(translation) Type d’organisation",
+        "auditScope": "TODO(translation) Périmètre de l’audit",
+        "projectStage": "TODO(translation) Où en est votre projet ?",
+        "learners": "TODO(translation) Nombre de personnes à former",
+        "learnersHint": "TODO(translation) Une estimation suffit.",
+        "trainingFormat": "TODO(translation) Format souhaité",
+        "takafulAudience": "TODO(translation) Pour qui ?",
+        "partnerKind": "TODO(translation) Vous représentez",
+        "timeframe": "TODO(translation) Échéance souhaitée",
+        "messageHint": "TODO(translation) Quelques phrases suffisent ; évitez les données confidentielles à ce stade.",
+        "message": {
+          "audit": "TODO(translation) Décrivez l’établissement et ce que vous attendez de l’audit",
+          "conseil": "TODO(translation) Décrivez votre projet et vos questions",
+          "accompagnement": "TODO(translation) Décrivez votre projet et l’aide attendue",
+          "formation-entreprise": "TODO(translation) Quels métiers et quels sujets souhaitez-vous couvrir ?",
+          "takaful": "TODO(translation) Décrivez votre besoin de protection ou de financement",
+          "partenariat": "TODO(translation) Décrivez le partenariat envisagé"
+        }
+      },
+      "submit": "TODO(translation) Envoyer ma demande",
+      "done": {
+        "title": "TODO(translation) Merci {name}, votre demande est bien enregistrée",
+        "lead": "TODO(translation) Demande « {type} », référence n° {reference}.",
+        "nextTitle": "TODO(translation) Ce qui va se passer",
+        "next1": "TODO(translation) Un accusé de réception part à l’instant vers {email} (pensez à vérifier les indésirables).",
+        "next2": "TODO(translation) Un consultant étudie votre demande et vous contacte sous {days, plural, one {# jour ouvré} other {# jours ouvrés}}.",
+        "next3": "TODO(translation) Si votre besoin est clair, vous recevez ensuite une proposition détaillée ; sinon, nous convenons d’un premier échange.",
+        "resources": "TODO(translation) Découvrir nos ressources",
+        "home": "TODO(translation) Retour à l’accueil"
+      }
+    },
+    "contact": {
+      "subject": "TODO(translation) Objet",
+      "message": "TODO(translation) Votre message",
+      "submit": "TODO(translation) Envoyer",
+      "doneTitle": "TODO(translation) Message bien reçu",
+      "doneText": "TODO(translation) Un accusé de réception est envoyé à {email}. Nous vous répondons sous {days, plural, one {# jour ouvré} other {# jours ouvrés}}."
+    },
+    "newsletter": {
+      "submit": "TODO(translation) S’inscrire",
+      "done": "TODO(translation) Presque terminé : un e-mail de confirmation vient de vous être envoyé. Cliquez sur le lien qu’il contient pour valider votre inscription.",
+      "note": "TODO(translation) Une lettre par mois au plus. Double confirmation par e-mail, désinscription en un clic.",
+      "interestsLegend": "TODO(translation) Sujets qui vous intéressent (facultatif)"
+    },
+    "guide": {
+      "emailHint": "TODO(translation) Le lien de téléchargement vous est aussi envoyé par e-mail.",
+      "privacy": "TODO(translation) Votre adresse sert à vous envoyer le guide. Vous ne recevrez la lettre d’information que si vous cochez la case ci-dessus.",
+      "submit": "TODO(translation) Recevoir le guide",
+      "doneTitle": "TODO(translation) Votre guide est prêt",
+      "doneText": "TODO(translation) Téléchargez-le maintenant ; le lien vous a aussi été envoyé à {email} (valable sept jours).",
+      "download": "TODO(translation) Télécharger le guide (PDF)"
+    },
+    "appointment": {
+      "unavailableTitle": "TODO(translation) Agenda en ligne bientôt disponible",
+      "unavailableText": "TODO(translation) TODO(client) : compte Cal.com. En attendant, demandez un rendez-vous par le formulaire de contact ou sur WhatsApp : nous vous proposons un créneau sous deux jours ouvrés.",
+      "kindLegend": "TODO(translation) Type d’entretien",
+      "kinds": {
+        "decouverte": {
+          "label": "TODO(translation) Découverte, 30 minutes",
+          "hint": "TODO(translation) Gratuit et sans engagement : comprendre votre besoin."
+        },
+        "audit": {
+          "label": "TODO(translation) Préparation d’un audit",
+          "hint": "TODO(translation) Cadrer le périmètre, le calendrier et les documents."
+        },
+        "conseil": {
+          "label": "TODO(translation) Conseil et accompagnement",
+          "hint": "TODO(translation) Échanger sur un projet de produit, de fenêtre ou de comité."
+        }
+      },
+      "open": "TODO(translation) Afficher l’agenda",
+      "privacy": "TODO(translation) L’agenda est fourni par Cal.com ; il ne se charge qu’après ce clic.",
+      "calendarLabel": "TODO(translation) Agenda de réservation"
+    },
+    "newsletterConfirm": {
+      "submit": "TODO(translation) Confirmer mon inscription",
+      "resources": "TODO(translation) Découvrir nos ressources",
+      "confirmed": {
+        "title": "TODO(translation) Inscription confirmée",
+        "text": "TODO(translation) Merci ! Vous recevrez notre prochaine lettre d’information. Chaque envoi contient un lien de désinscription."
+      },
+      "already-confirmed": {
+        "title": "TODO(translation) Inscription déjà confirmée",
+        "text": "TODO(translation) Votre adresse est déjà inscrite : vous n’avez rien d’autre à faire."
+      },
+      "expired": {
+        "title": "TODO(translation) Ce lien a expiré",
+        "text": "TODO(translation) Pour votre sécurité, les liens de confirmation sont valables trois jours. Inscrivez-vous de nouveau depuis le pied de page."
+      },
+      "invalid": {
+        "title": "TODO(translation) Lien de confirmation invalide",
+        "text": "TODO(translation) Le lien est incomplet ou a déjà été remplacé. Inscrivez-vous de nouveau depuis le pied de page."
+      }
+    }
+  },
+  "emails": {
+    "footer": "TODO(translation) Amana Conseil, Douala (Cameroun). Les contenus d’Amana Conseil ont une vocation d’information et de formation : ils ne constituent ni une fatwa ni un conseil financier personnalisé.",
+    "signature": "TODO(translation) L’équipe Amana Conseil",
+    "types": {
+      "contact": "TODO(translation) question générale",
+      "audit": "TODO(translation) audit de conformité",
+      "conseil": "TODO(translation) conseil",
+      "accompagnement": "TODO(translation) accompagnement de projet",
+      "formation-entreprise": "TODO(translation) formation de vos équipes",
+      "takaful": "TODO(translation) takaful et financement",
+      "partenariat": "TODO(translation) partenariat"
+    },
+    "fields": {
+      "type": "TODO(translation) Demande",
+      "organization": "TODO(translation) Organisation",
+      "reference": "TODO(translation) Référence",
+      "name": "TODO(translation) Nom",
+      "email": "TODO(translation) E-mail",
+      "phone": "TODO(translation) Téléphone",
+      "jobTitle": "TODO(translation) Fonction",
+      "city": "TODO(translation) Ville",
+      "locale": "TODO(translation) Langue",
+      "sourcePage": "TODO(translation) Page d’origine",
+      "message": "TODO(translation) Message"
+    },
+    "details": {
+      "organizationKind": "TODO(translation) Type d’organisation",
+      "auditScope": "TODO(translation) Périmètre de l’audit",
+      "projectStage": "TODO(translation) Avancement du projet",
+      "learners": "TODO(translation) Personnes à former",
+      "trainingFormat": "TODO(translation) Format",
+      "takafulAudience": "TODO(translation) Public",
+      "partnerKind": "TODO(translation) Type de partenaire",
+      "timeframe": "TODO(translation) Échéance",
+      "guide": "TODO(translation) Guide",
+      "newsletter": "TODO(translation) Newsletter demandée"
+    },
+    "ack": {
+      "subject": "TODO(translation) Nous avons bien reçu votre demande ({type})",
+      "preview": "TODO(translation) Un consultant vous répond sous {days, plural, one {# jour ouvré} other {# jours ouvrés}}.",
+      "heading": "TODO(translation) Votre demande est bien enregistrée",
+      "greeting": "TODO(translation) Bonjour {name}, merci de votre confiance.",
+      "stepsTitle": "TODO(translation) Ce qui va se passer :",
+      "step1": "TODO(translation) Votre demande est transmise au consultant responsable du sujet.",
+      "step2": "TODO(translation) Il vous contacte sous {days, plural, one {# jour ouvré} other {# jours ouvrés}} pour préciser votre besoin.",
+      "step3": "TODO(translation) Vous recevez ensuite une proposition adaptée, ou nous convenons d’un premier échange.",
+      "summaryTitle": "TODO(translation) Récapitulatif"
+    },
+    "team": {
+      "subject": "TODO(translation) Nouvelle demande : {type}, {name}",
+      "preview": "TODO(translation) Nouvelle demande de {name} à traiter.",
+      "heading": "TODO(translation) Nouvelle demande : {type}",
+      "admin": "TODO(translation) Ouvrir dans l’administration",
+      "footer": "TODO(translation) Notification interne envoyée par le site Amana Conseil. Répondre à cet e-mail écrit directement au demandeur."
+    },
+    "newsletter": {
+      "subject": "TODO(translation) Confirmez votre inscription à la lettre d’Amana Conseil",
+      "preview": "TODO(translation) Un clic pour confirmer votre inscription.",
+      "heading": "TODO(translation) Confirmez votre inscription",
+      "intro": "TODO(translation) Vous avez demandé à recevoir la lettre d’information d’Amana Conseil. Confirmez votre adresse en cliquant sur le bouton ci-dessous.",
+      "action": "TODO(translation) Confirmer mon inscription",
+      "note": "TODO(translation) Ce lien est valable trois jours. Si vous n’êtes pas à l’origine de cette demande, ignorez simplement ce message : vous ne serez pas inscrit."
+    },
+    "guide": {
+      "subject": "TODO(translation) Votre guide : {title}",
+      "preview": "TODO(translation) Le lien de téléchargement de « {title} ».",
+      "heading": "TODO(translation) Votre guide est prêt",
+      "intro": "TODO(translation) Merci de votre intérêt pour « {title} ». Téléchargez-le avec le bouton ci-dessous.",
+      "action": "TODO(translation) Télécharger le guide",
+      "note": "TODO(translation) Ce lien personnel est valable sept jours. Ne le transférez pas : il vous est réservé."
+    },
+    "auth": {
+      "greeting": "مرحبًا {name}،",
+      "greetingAnonymous": "مرحبًا،",
+      "verify": {
+        "subject": "أكّد بريدك الإلكتروني",
+        "preview": "نقرة واحدة لتفعيل حسابك لدى أمانة للاستشارات.",
+        "heading": "فعّل حسابك",
+        "intro": "شكرًا لتسجيلك. أكّد بريدك الإلكتروني للوصول إلى دوراتك.",
+        "action": "تأكيد عنواني",
+        "note": "لم تقم بهذا التسجيل؟ تجاهل هذه الرسالة: لن يُفعَّل أي حساب."
+      },
+      "exists": {
+        "subject": "لديك حساب بالفعل",
+        "preview": "طُلب تسجيل باستخدام عنوانك.",
+        "heading": "لديك حساب بالفعل",
+        "intro": "طُلب للتو تسجيل باستخدام عنوانك، وهو مرتبط بحساب قائم. سجّل الدخول؛ وإذا نسيت كلمة المرور، فاختر كلمة جديدة عبر الرابط أدناه.",
+        "action": "اختيار كلمة مرور جديدة",
+        "note": "لم تقم بهذا الطلب؟ تجاهل هذه الرسالة: حسابك لم يتغيّر."
+      },
+      "reset": {
+        "subject": "اختر كلمة مرور جديدة",
+        "preview": "رابط إعادة التعيين، صالح لمدة ساعة.",
+        "heading": "كلمة مرور جديدة",
+        "intro": "طلبت تغيير كلمة المرور. هذا الرابط صالح لمدة ساعة ويُستخدم مرة واحدة.",
+        "action": "اختيار كلمة مرور جديدة",
+        "note": "لم تقم بهذا الطلب؟ تجاهل هذه الرسالة: تبقى كلمة مرورك الحالية صالحة."
+      }
+    }
+  },
+  "learn": {
+    "breadcrumb": {
+      "home": "الرئيسية",
+      "formation": "التدريب",
+      "catalog": "الدورات عبر الإنترنت"
+    },
+    "levels": {
+      "beginner": "مبتدئ",
+      "intermediate": "متوسط",
+      "advanced": "متقدم"
+    },
+    "formats": {
+      "course": "دورة",
+      "capsule": "كبسولة"
+    },
+    "languages": {
+      "fr": "الفرنسية",
+      "en": "الإنجليزية",
+      "ar": "العربية"
+    },
+    "lessonTypes": {
+      "video": "فيديو",
+      "text": "نص",
+      "pdf": "مستند PDF",
+      "quiz": "اختبار",
+      "case-study": "دراسة حالة"
+    },
+    "jobRoles": {
+      "compliance": "الامتثال",
+      "front-office": "المكتب الأمامي",
+      "back-office": "المكتب الخلفي",
+      "management": "الإدارة العليا",
+      "other": "مهن أخرى"
+    },
+    "paths": {
+      "courseCount": "{count, plural, =0 {لا دورات} one {دورة واحدة} two {دورتان} few {# دورات} other {# دورة}}"
+    },
+    "card": {
+      "defaultTheme": "التمويل الإسلامي",
+      "noUnitPrice": "مدرجة في المسارات والباقات"
+    },
+    "featured": {
+      "title": "دورات مختارة",
+      "catalog": "تصفّح الكتالوج كاملًا"
+    },
+    "catalog": {
+      "title": "الدورات عبر الإنترنت",
+      "lead": "دورات كاملة للأفراد وكبسولات قصيرة للفرق، تُتابَع على الهاتف، مع شهادة قابلة للتحقق.",
+      "all": "الكل",
+      "filters": {
+        "title": "تصفية الكتالوج",
+        "search": "البحث عن تدريب",
+        "searchHint": "مثال: مرابحة، تكافل، تدقيق شرعي.",
+        "theme": "الموضوع",
+        "level": "المستوى",
+        "format": "الصيغة",
+        "duration": "المدة",
+        "price": "السعر",
+        "language": "اللغة",
+        "submit": "عرض التدريبات",
+        "reset": "مسح عوامل التصفية"
+      },
+      "sort": {
+        "label": "الترتيب حسب",
+        "recommandes": "الموصى بها",
+        "pertinence": "الصلة",
+        "recents": "الأحدث",
+        "prix-croissant": "السعر تصاعديًا",
+        "prix-decroissant": "السعر تنازليًا",
+        "duree": "الأقصر مدة"
+      },
+      "durations": {
+        "moins-1h": "أقل من ساعة",
+        "1h-3h": "من ساعة إلى 3 ساعات",
+        "plus-3h": "أكثر من 3 ساعات"
+      },
+      "prices": {
+        "gratuit": "مجاني",
+        "moins-30000": "أقل من 30000 فرنك",
+        "30000-60000": "من 30000 إلى 60000 فرنك",
+        "plus-60000": "أكثر من 60000 فرنك"
+      },
+      "chips": {
+        "label": "عوامل التصفية النشطة",
+        "remove": "(إزالة عامل التصفية)",
+        "q": "«{q}»"
+      },
+      "count": "{count, plural, =0 {لا يوجد تدريب} one {تدريب واحد} two {تدريبان} few {# تدريبات} other {# تدريبًا}}",
+      "empty": {
+        "title": "لا يوجد تدريب يطابق هذه المعايير",
+        "text": "أزل أحد عوامل التصفية، أو تصفّح الكتالوج كاملًا.",
+        "textSearch": "لا نتائج لـ «{q}». تحقّق من الإملاء أو جرّب كلمة أعمّ.",
+        "action": "تصفّح الكتالوج كاملًا"
+      },
+      "coursesHeading": "الدورات",
+      "capsulesHeading": "كبسولات للشركات",
+      "capsulesLead": "من 3 إلى 10 دقائق لكل مهنة، تُباع في باقات وتراخيص لفرقكم.",
+      "pathsTitle": "المسارات",
+      "pathsLead": "عدة دورات تُتابَع بالترتيب، بسعر مجمّع، مع شهادة مسار."
+    },
+    "course": {
+      "outlineEmpty": "سيُنشر البرنامج المفصّل قريبًا.",
+      "moduleTitle": "الوحدة {number}: {title}",
+      "moduleMeta": "{count, plural, =0 {لا دروس} one {درس واحد} two {درسان} few {# دروس} other {# درسًا}}، {duration}",
+      "freePreview": "مقتطف مجاني",
+      "watchPreview": "مشاهدة المقتطف",
+      "readPreview": "قراءة المقتطف",
+      "watchTrailer": "مشاهدة التقديم",
+      "includes": {
+        "lessons": "{count, plural, =0 {لا دروس} one {درس واحد} two {درسان} few {# دروس} other {# درسًا}}",
+        "duration": "{duration} من المحتوى",
+        "quizzes": "{count, plural, =0 {لا اختبارات} one {اختبار مصحَّح واحد} two {اختباران مصحَّحان} few {# اختبارات مصحَّحة} other {# اختبارًا مصحَّحًا}}",
+        "certificate": "شهادة قابلة للتحقق عبر الإنترنت",
+        "mobile": "على الهاتف، وفق إيقاعك، مع وضع توفير البيانات"
+      },
+      "cta": {
+        "business": "طلب عرض توضيحي",
+        "request": "طلب الوصول"
+      },
+      "facts": {
+        "duration": "المدة",
+        "lessons": "الدروس",
+        "lessonsValue": "{count, plural, =0 {لا دروس} one {درس واحد} two {درسان} few {# دروس} other {# درسًا}}",
+        "level": "المستوى",
+        "language": "اللغة",
+        "certificate": "الشهادة",
+        "certificateValue": "مشمولة"
+      },
+      "byInstructors": "مع {names}",
+      "objectivesTitle": "ما ستتمكن من فعله",
+      "outlineTitle": "البرنامج",
+      "outlineSummary": "{modules, plural, =0 {لا وحدات} one {وحدة واحدة} two {وحدتان} few {# وحدات} other {# وحدة}}، {lessons, plural, =0 {لا دروس} one {درس واحد} two {درسان} few {# دروس} other {# درسًا}}، {duration} إجمالًا.",
+      "outlinePreviews": "{count, plural, one {مقتطف مجاني واحد، دون حساب.} two {مقتطفان مجانيان، دون حساب.} other {# مقتطفات مجانية، دون حساب.}}",
+      "descriptionTitle": "حول هذه الدورة",
+      "prerequisitesTitle": "المتطلبات المسبقة",
+      "instructorsTitle": "{count, plural, one {المدرّب} other {المدرّبون}}",
+      "instructorRole": "مدرّب، أمانة للاستشارات",
+      "reviews": {
+        "title": "آراء المشاركين",
+        "average": "{average} من 5، استنادًا إلى {count} رأي",
+        "rating": "{rating} من 5",
+        "none": "لا آراء منشورة حتى الآن. الآراء مخصّصة للمشاركين الذين تابعوا نصف الدورة على الأقل، وتُراجَع قبل النشر.",
+        "belowThreshold": "يُعرض متوسط التقييم ابتداءً من ثلاثة آراء منشورة.",
+        "policy": "آراء من مشاركين تابعوا نصف الدورة على الأقل، تُراجَع قبل النشر."
+      },
+      "pathsTitle": "هذه الدورة جزء من المسارات",
+      "priceBusiness": "ضمن باقة أو ترخيص",
+      "priceOnRequest": "السعر عند الطلب",
+      "noteBusiness": "تُقدَّم الكبسولات للشركات في باقات موضوعية أو بترخيص سنوي لكل مقعد. نرسل إليكم عرض سعر.",
+      "noteIndividual": "يُفتح الدفع عبر الإنترنت (الهاتف المحمول، البطاقة) قريبًا. في الأثناء، راسلونا: نوضّح لكم طريقة الدفع بالتحويل ونفتح وصولكم.",
+      "relatedTitle": "دورات ذات صلة"
+    },
+    "path": {
+      "kind": "مسار",
+      "coursesTitle": "دورات المسار",
+      "step": "المرحلة {number}:",
+      "unitPrice": "سعر الدورة منفردة:",
+      "descriptionTitle": "حول هذا المسار",
+      "includes": {
+        "duration": "{duration} من المحتوى",
+        "certificate": "شهادة مسار قابلة للتحقق عبر الإنترنت"
+      },
+      "priceOnRequest": "السعر عند الطلب",
+      "cta": "طلب الوصول",
+      "separatePrice": "الدورات عند شرائها منفردة: {amount}.",
+      "note": "يُفتح الدفع عبر الإنترنت قريبًا؛ راسلونا للوصول إلى المسار الآن."
+    },
+    "preview": {
+      "loading": "جارٍ تحميل المقتطف…",
+      "free": "مقتطف مجاني، دون حساب.",
+      "of": "(مقتطف: {title})",
+      "transcript": "النص المكتوب",
+      "errors": {
+        "not-found": "هذا المقتطف لم يعد متاحًا.",
+        "unavailable": "الفيديو قيد التحضير. أعد المحاولة بعد بضع دقائق.",
+        "rate-limited": "طلبات كثيرة في وقت قصير. أعد المحاولة بعد بضع دقائق.",
+        "unsupported": "لا يستطيع هذا المتصفح تشغيل هذا الفيديو هنا بعد. سيُشغَّل في مشغّل الدورة؛ والنص المكتوب متاح أدناه."
+      }
+    },
+    "auth": {
+      "showPassword": "إظهار كلمة المرور",
+      "resend": "إعادة إرسال رابط التأكيد",
+      "resent": {
+        "title": "تم إرسال الرابط",
+        "text": "إذا كان هناك حساب غير مؤكَّد للعنوان {email}، فقد أُرسل إليه رابط جديد للتو."
+      },
+      "fields": {
+        "email": "البريد الإلكتروني",
+        "emailHint": "نرسل إليه رابطًا لتأكيد عنوانك.",
+        "password": "كلمة المرور",
+        "newPassword": "كلمة المرور",
+        "passwordHint": "{min} أحرف على الأقل. عبارة سهلة التذكّر مناسبة جدًا.",
+        "firstName": "الاسم",
+        "lastName": "اللقب"
+      },
+      "errors": {
+        "required": "هذا الحقل إلزامي.",
+        "email": "أدخل بريدًا إلكترونيًا صالحًا، مثل name@example.cm.",
+        "tooShort": "هذا النص قصير جدًا.",
+        "tooLong": "هذا النص طويل جدًا: اختصره.",
+        "phone": "أدخل رقم هاتف صالحًا.",
+        "choice": "اختر خيارًا من القائمة.",
+        "consent": "ضع علامة في المربع للمتابعة.",
+        "number": "أدخل رقمًا صالحًا.",
+        "passwordLength": "اختر كلمة مرور من 10 إلى 128 حرفًا.",
+        "terms": "اقبل شروط الاستخدام وسياسة الخصوصية لإنشاء حسابك."
+      },
+      "submit": {
+        "captcha": {
+          "title": "تعذّر التحقق من أنك لست روبوتًا",
+          "text": "أعد تحميل الصفحة ثم حاول مجددًا. إذا استمرت المشكلة، عطّل أي أداة لحجب المحتوى."
+        },
+        "rate-limited": {
+          "title": "محاولات كثيرة",
+          "text": "لدواعٍ أمنية، أعد المحاولة بعد {minutes} د."
+        },
+        "invalid-credentials": {
+          "title": "البريد الإلكتروني أو كلمة المرور غير صحيحة",
+          "text": "تحقّق مما أدخلته. بعد خمس محاولات فاشلة، يُعلَّق الدخول خمس عشرة دقيقة؛ استخدم «نسيت كلمة المرور» عند الشك."
+        },
+        "unverified": {
+          "title": "عنوان بريد إلكتروني بحاجة إلى تأكيد",
+          "text": "افتح الرابط الذي وصلك عند التسجيل لتفعيل حسابك."
+        },
+        "invalid-token": {
+          "title": "الرابط منتهي الصلاحية أو مستخدَم",
+          "text": "اطلب رابطًا جديدًا: صالح لمدة ساعة ويُستخدم مرة واحدة."
+        },
+        "server": {
+          "title": "حادث يمنعنا من معالجة طلبك",
+          "text": "ليس الخطأ منك. أعد المحاولة بعد لحظة."
+        }
+      },
+      "signIn": {
+        "title": "تسجيل الدخول",
+        "lead": "تابع دوراتك وتقدّمك وشهاداتك.",
+        "submit": "تسجيل الدخول",
+        "forgot": "نسيت كلمة المرور؟",
+        "noAccount": "ليس لديك حساب بعد؟",
+        "createAccount": "إنشاء حساب"
+      },
+      "signUp": {
+        "title": "إنشاء حساب",
+        "lead": "حساب مجاني لمتابعة دوراتك، على الهاتف أو الحاسوب.",
+        "submit": "إنشاء حسابي",
+        "doneTitle": "تفقّد بريدك الإلكتروني",
+        "doneText": "أُرسلت رسالة للتو إلى {email}. افتح الرابط الذي تحتويه لتفعيل حسابك. لا تنسَ التحقق من مجلد الرسائل غير المرغوب فيها.",
+        "terms": "أوافق على <cgu>شروط الاستخدام</cgu> و<privacy>سياسة الخصوصية</privacy>.",
+        "hasAccount": "لديك حساب بالفعل؟",
+        "signIn": "تسجيل الدخول"
+      },
+      "forgot": {
+        "title": "نسيت كلمة المرور",
+        "lead": "أدخل عنوانك: نرسل إليك رابطًا لاختيار كلمة مرور جديدة.",
+        "submit": "استلام الرابط",
+        "doneTitle": "تفقّد بريدك الإلكتروني",
+        "doneText": "إذا كان هناك حساب للعنوان {email}، فقد أُرسل إليه للتو رابط صالح لمدة ساعة.",
+        "back": "العودة إلى تسجيل الدخول"
+      },
+      "reset": {
+        "title": "كلمة مرور جديدة",
+        "lead": "اختر كلمة مرور جديدة. ستُسجَّل دخولك بعدها.",
+        "submit": "حفظ وتسجيل الدخول",
+        "requestAgain": "طلب رابط جديد"
+      },
+      "verify": {
+        "title": "تأكيد عنوانك",
+        "intro": "خطوة أخيرة: أكّد بريدك الإلكتروني لتفعيل حسابك.",
+        "submit": "تأكيد عنواني",
+        "doneTitle": "تم تأكيد العنوان",
+        "doneText": "حسابك مفعَّل. سجّل الدخول للبدء.",
+        "invalid": {
+          "title": "الرابط منتهي الصلاحية أو مستخدَم",
+          "text": "إذا كان عنوانك مؤكَّدًا بالفعل، فسجّل الدخول. وإلا فسجّل الدخول لاستلام رابط جديد."
+        },
+        "error": {
+          "title": "التأكيد غير ممكن حاليًا",
+          "text": "أعد المحاولة بعد لحظة."
+        }
+      },
+      "signedIn": {
+        "text": "أنت مسجَّل الدخول ({name}).",
+        "catalog": "عرض الدورات",
+        "signOut": "تسجيل الخروج"
+      },
+      "benefits": {
+        "title": "حسابك لدى أمانة للاستشارات",
+        "progress": "استأنف كل دورة من حيث توقفت، على جميع أجهزتك.",
+        "certificates": "احصل على شهادات قابلة للتحقق برمز ورمز QR.",
+        "mobile": "تابع دوراتك على الهاتف، مع وضع توفير البيانات.",
+        "privacy": "تُستخدم بياناتك لتدريبك فقط. لا بيع ولا إعلانات."
+      }
+    }
+  }
+}

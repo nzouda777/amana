@@ -1,0 +1,61 @@
+/*
+ * Trame (DESIGN §6) : miroir en RTL, tracé unique et radial en ~1 400 ms.
+ * 8 anneaux × 100 ms de décalage + 700 ms de tracé par anneau = 1 400 ms.
+ */
+.trame:dir(rtl) {
+  scale: -1 1;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .trame[data-animate] path {
+    stroke-dasharray: 1;
+    animation: var(--animate-trame-draw);
+  }
+  .trame[data-animate] .trame-r1 {
+    animation-delay: 100ms;
+  }
+  .trame[data-animate] .trame-r2 {
+    animation-delay: 200ms;
+  }
+  .trame[data-animate] .trame-r3 {
+    animation-delay: 300ms;
+  }
+  .trame[data-animate] .trame-r4 {
+    animation-delay: 400ms;
+  }
+  .trame[data-animate] .trame-r5 {
+    animation-delay: 500ms;
+  }
+  .trame[data-animate] .trame-r6 {
+    animation-delay: 600ms;
+  }
+  .trame[data-animate] .trame-r7 {
+    animation-delay: 700ms;
+  }
+}
+
+/* Barre de progression native (ProgressBar) : rail et remplissage tokenisés. */
+.progress-default,
+.progress-light {
+  background-color: var(--color-line);
+  color: var(--color-green-700);
+}
+.progress-light {
+  background-color: color-mix(in srgb, var(--color-paper) 20%, transparent);
+  color: var(--color-gold-500);
+}
+.progress-default::-webkit-progress-bar,
+.progress-light::-webkit-progress-bar {
+  background-color: transparent;
+}
+.progress-default::-webkit-progress-value,
+.progress-light::-webkit-progress-value {
+  background-color: currentColor;
+  border-radius: var(--radius-pill);
+  transition: width var(--duration-panel) var(--ease-standard);
+}
+.progress-default::-moz-progress-bar,
+.progress-light::-moz-progress-bar {
+  background-color: currentColor;
+  border-radius: var(--radius-pill);
+}

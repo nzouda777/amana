@@ -1,0 +1,165 @@
+@import 'tailwindcss';
+/* Tokens du design system (docs/DESIGN.md) : fichier possédé par l'agent design-system. */
+@import './tokens.css';
+@import './prose.css';
+@import './components.css';
+
+/*
+ * Variantes d'état. Les composants utilisent `is-hover:`, `is-active:` et `is-focus:`
+ * plutôt que `hover:` / `active:` : ces variantes acceptent aussi un attribut
+ * `data-force` qui permet à /styleguide d'afficher chaque état de façon statique.
+ */
+@custom-variant is-hover {
+  @media (hover: hover) {
+    &:hover {
+      @slot;
+    }
+  }
+  &[data-force~='hover'] {
+    @slot;
+  }
+}
+@custom-variant is-active {
+  &:active {
+    @slot;
+  }
+  &[data-force~='active'] {
+    @slot;
+  }
+}
+@custom-variant is-focus {
+  &:focus-visible {
+    @slot;
+  }
+  &[data-force~='focus'] {
+    @slot;
+  }
+}
+@custom-variant group-is-hover {
+  @media (hover: hover) {
+    :where(.group):hover & {
+      @slot;
+    }
+  }
+  :where([data-force~='hover']) & {
+    @slot;
+  }
+}
+@custom-variant rtl-dir (&:where(:dir(rtl), [dir='rtl'], [dir='rtl'] *));
+
+/* Surface sombre (green-700 / green-900) : focus or, texte clair. */
+@utility on-dark {
+  --focus-color: var(--color-gold-500);
+  color: var(--color-paper);
+}
+
+/* Chiffres alignés : prix, tableaux, scores, progression (DESIGN §3). */
+@utility tabular {
+  font-variant-numeric: tabular-nums lining-nums;
+}
+
+/* Conteneur de page : 1280 px de contenu, marges 20 / 40 / 64 px. */
+@utility container-page {
+  width: 100%;
+  max-width: calc(var(--container-page) + 2 * var(--spacing-margin));
+  margin-inline: auto;
+  padding-inline: var(--spacing-margin);
+}
+
+/* Agrandit la zone tactile à 44 px sans changer l'encombrement visuel. */
+@utility hit-area {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    inset: min(0px, calc((100% - 44px) / 2));
+  }
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    scroll-padding-block-start: calc(var(--spacing-header) + 1rem);
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: var(--text-body);
+    line-height: var(--text-body--line-height);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-weight: var(--font-weight-regular);
+    text-wrap: balance;
+    hyphens: manual;
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-weight: var(--font-weight-semibold);
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Césure automatique en français sur le texte courant, jamais sur les titres. */
+  :lang(fr) p,
+  :lang(fr) li,
+  :lang(fr) dd {
+    hyphens: auto;
+  }
+
+  ::selection {
+    background-color: var(--color-green-50);
+    color: var(--color-green-900);
+  }
+
+  .on-dark ::selection {
+    background-color: var(--color-gold-500);
+    color: var(--color-ink);
+  }
+
+  /* Focus (DESIGN §8) : anneau 2 px décalé de 2 px, couleur selon la surface. */
+  :focus-visible,
+  [data-force~='focus'] {
+    outline: 2px solid var(--focus-color);
+    outline-offset: 2px;
+  }
+
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  /* Icônes Lucide : trait 1,5 px (DESIGN §5). */
+  svg.lucide {
+    stroke-width: 1.5;
+    flex-shrink: 0;
+  }
+
+  [hidden]:where(:not([hidden='until-found'])) {
+    display: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

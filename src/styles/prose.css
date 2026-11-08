@@ -1,0 +1,143 @@
+/*
+ * Styles d'article (composant <Prose>) : contenus riches venant du CMS.
+ * Propriétés logiques uniquement ; aucune valeur hors tokens.
+ */
+@layer components {
+  .prose {
+    max-width: var(--container-measure);
+    color: var(--color-ink);
+    font-size: var(--text-body);
+    line-height: var(--text-body--line-height);
+
+    & > * + * {
+      margin-block-start: 1.25em;
+    }
+
+    & h2 {
+      margin-block-start: 2.5em;
+      font-size: var(--text-h2);
+      line-height: var(--text-h2--line-height);
+    }
+    & h3 {
+      margin-block-start: 2em;
+      font-size: var(--text-h3);
+      line-height: var(--text-h3--line-height);
+    }
+    & h4 {
+      margin-block-start: 1.75em;
+      font-size: var(--text-h4);
+      line-height: var(--text-h4--line-height);
+    }
+    & h2 + *,
+    & h3 + *,
+    & h4 + * {
+      margin-block-start: 0.75em;
+    }
+
+    & a {
+      color: var(--color-green-700);
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.2em;
+      transition: color var(--duration-hover) var(--ease-standard);
+    }
+    & a:hover {
+      color: var(--color-green-800);
+    }
+
+    & strong {
+      font-weight: var(--font-weight-semibold);
+    }
+
+    & ul,
+    & ol {
+      padding-inline-start: 1.5em;
+    }
+    & ul {
+      list-style-type: disc;
+    }
+    & ol {
+      list-style-type: decimal;
+    }
+    & li + li {
+      margin-block-start: 0.5em;
+    }
+    & li::marker {
+      color: var(--color-green-700);
+    }
+    & ol > li::marker {
+      font-variant-numeric: tabular-nums lining-nums;
+      font-weight: var(--font-weight-semibold);
+    }
+
+    /* Citation : Baskerville italique (seul usage de l'italique avec les témoignages). */
+    & blockquote {
+      margin-block: 2em;
+      padding-inline-start: 1.5em;
+      border-inline-start: 1px solid var(--color-gold-500);
+      font-family: var(--font-display);
+      font-size: var(--text-h4);
+      font-style: italic;
+      line-height: 1.5;
+      color: var(--color-ink);
+    }
+    & blockquote cite,
+    & blockquote footer {
+      display: block;
+      margin-block-start: 0.75em;
+      font-family: var(--font-sans);
+      font-size: var(--text-small);
+      font-style: normal;
+      color: var(--color-ink-muted);
+    }
+
+    & hr {
+      margin-block: 3em;
+      border: 0;
+      border-block-start: 1px solid var(--color-line);
+    }
+
+    & figure img {
+      border-radius: var(--radius-media);
+    }
+    & figcaption {
+      margin-block-start: 0.75em;
+      font-size: var(--text-caption);
+      line-height: var(--text-caption--line-height);
+      color: var(--color-ink-muted);
+    }
+
+    /* Tableaux : défilement horizontal assuré par le conteneur .prose-table */
+    & .prose-table {
+      position: relative;
+      overflow-x: auto;
+      border: 1px solid var(--color-line);
+      border-radius: var(--radius-panel);
+    }
+    & table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: var(--text-small);
+      line-height: var(--text-small--line-height);
+      font-variant-numeric: tabular-nums lining-nums;
+    }
+    & th,
+    & td {
+      padding: 0.75rem 1rem;
+      text-align: start;
+      vertical-align: top;
+    }
+    & thead th {
+      background-color: var(--color-sand-100);
+      font-weight: var(--font-weight-semibold);
+    }
+    & tbody tr + tr,
+    & thead + tbody tr {
+      border-block-start: 1px solid var(--color-line);
+    }
+
+    & .callout {
+      margin-block: 2em;
+    }
+  }
+}

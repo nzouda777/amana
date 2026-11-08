@@ -1,0 +1,18 @@
+node_modules/
+.next/
+out/
+.env
+.env.*
+!.env.example
+*.log
+coverage/
+playwright-report/
+test-results/
+media/
+*.tsbuildinfo
+next-env.d.ts
+private-files/
+.env.bak*
+# E-mails écrits par l'adaptateur de développement (src/lib/email/senders.ts)
+.dev-emails/
+.dev-media/

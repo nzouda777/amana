@@ -1,0 +1,249 @@
+/*
+ * Tokens du design system Amana Conseil — traduction de docs/DESIGN.md.
+ * Source unique : toute couleur, taille, rayon, ombre, durée ou courbe vient d'ici.
+ * Les palettes, échelles et rayons par défaut de Tailwind sont neutralisés (`initial`)
+ * pour qu'aucune valeur hors charte ne puisse être utilisée par inadvertance.
+ * Toute nouvelle combinaison texte/fond est déclarée dans `src/styles/pairs.ts`
+ * (vérifiée par tests/a11y/contrast.test.ts).
+ */
+
+@theme {
+  /* ------------------------------------------------------------------ Couleurs */
+  --color-*: initial;
+
+  /* Marque (charte, ne pas modifier) */
+  --color-green-700: #1b5e20;
+  --color-gold-500: #d4af37;
+  --color-sand-300: #f1e0c5;
+  --color-ink: #1c1c1c;
+
+  /* Dérivées (DESIGN §2) */
+  --color-green-900: #0f3a14;
+  --color-green-800: #164d1a;
+  --color-green-50: #eef4ee;
+  --color-gold-700: #8b6914;
+  --color-gold-200: #efdfa6;
+  --color-sand-100: #faf4ea;
+  --color-paper: #ffffff;
+  --color-ink-muted: #4a4a45;
+  --color-ink-subtle: #6b6b63;
+  --color-line: #e4ddd0;
+  --color-danger: #b42318;
+  --color-warning: #b54708;
+  --color-info: #1e4e8c;
+
+  /*
+   * Ajouts M1 (journal de design) :
+   * - line-strong : bordure des champs de formulaire. `line` (≈ 1,3:1) ne satisfait
+   *   pas WCAG 1.4.11 (3:1 pour la limite d'un composant) ; line-strong ≈ 3,6:1.
+   * - fonds d'alerte teintés pour les encadrés et messages système.
+   */
+  --color-line-strong: #8a8478;
+  --color-danger-50: #fef3f2;
+  --color-warning-50: #fffaeb;
+  --color-info-50: #eff4fb;
+
+  /* -------------------------------------------------------------- Typographie */
+  --font-*: initial;
+  /* Résolues par locale : voir le bloc :lang(ar) plus bas et src/styles/fonts.ts. */
+  --font-display: var(--font-baskervville), 'Baskerville', 'Libre Baskerville', Georgia, serif;
+  --font-sans:
+    var(--font-open-sans), system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    sans-serif;
+
+  /*
+   * Échelle fluide : interpolation linéaire entre 390 px (mobile) et 1440 px (desktop).
+   * pente = (max − min) / 1050 ; ordonnée = min − pente × 390.
+   * Les interlignages basculent à 64rem (voir :root plus bas).
+   */
+  --text-*: initial;
+  --text-display: clamp(2.75rem, 1.7286rem + 4.1905vw, 5.5rem);
+  --text-display--line-height: var(--leading-display);
+  --text-display--letter-spacing: -0.02em;
+  --text-h1: clamp(2.25rem, 1.6929rem + 2.2857vw, 3.75rem);
+  --text-h1--line-height: var(--leading-h1);
+  --text-h1--letter-spacing: -0.01em;
+  --text-h2: clamp(1.75rem, 1.425rem + 1.3333vw, 2.625rem);
+  --text-h2--line-height: var(--leading-h2);
+  --text-h3: clamp(1.375rem, 1.2357rem + 0.5714vw, 1.75rem);
+  --text-h3--line-height: var(--leading-h3);
+  --text-h4: clamp(1.125rem, 1.0786rem + 0.1905vw, 1.25rem);
+  --text-h4--line-height: 1.35;
+  --text-body-lg: clamp(1.125rem, 1.0786rem + 0.1905vw, 1.25rem);
+  --text-body-lg--line-height: 1.65;
+  --text-body: clamp(1.0625rem, 1.0393rem + 0.0952vw, 1.125rem);
+  --text-body--line-height: 1.6;
+  --text-small: 0.9375rem;
+  --text-small--line-height: 1.5;
+  --text-caption: 0.8125rem;
+  --text-caption--line-height: 1.4;
+
+  --font-weight-*: initial;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+
+  /* ------------------------------------------------------- Espacements, grille */
+  /* Base 4 : p-1 = 4px, p-2 = 8, p-3 = 12, p-4 = 16, p-6 = 24, p-8 = 32, p-12 = 48,
+     p-16 = 64, p-24 = 96, p-32 = 128. N'utiliser que ces pas. */
+  --spacing: 0.25rem;
+  --spacing-section: var(--space-section);
+  --spacing-gutter: var(--space-gutter);
+  --spacing-margin: var(--space-margin);
+  --spacing-header: var(--space-header);
+
+  --container-*: initial;
+  --container-page: 80rem; /* 1280 px de contenu */
+  --container-measure: 68ch; /* longueur de ligne du texte courant */
+  --container-xs: 20rem; /* infobulles, popovers */
+  --container-sm: 28rem; /* petit dialogue, panneau latéral */
+  --container-md: 36rem; /* dialogue, colonne de formulaire */
+  --container-lg: 48rem; /* grand dialogue */
+  --container-xl: 64rem; /* citation, phrase de chiffres clés */
+
+  /* --------------------------------------------------------------------- Formes */
+  --radius-*: initial;
+  --radius-media: 2px;
+  --radius-control: 6px;
+  --radius-panel: 10px;
+  --radius-pill: 999px;
+
+  /* Seul ce qui flotte porte une ombre (menus, dialogues, panneau d'achat). */
+  --shadow-*: initial;
+  --shadow-float: 0 12px 32px -12px rgb(15 58 20 / 0.25);
+
+  /* ------------------------------------------------------------------ Mouvement */
+  --ease-*: initial;
+  --ease-standard: cubic-bezier(0.2, 0.7, 0.2, 1);
+
+  --animate-*: initial;
+  --animate-trame-draw: trame-draw 700ms var(--ease-standard) both;
+  --animate-fade-in: fade-in var(--duration-panel) var(--ease-standard);
+  --animate-fade-out: fade-out var(--duration-menu) var(--ease-standard);
+  --animate-panel-in: panel-in var(--duration-panel) var(--ease-standard);
+  --animate-panel-out: panel-out var(--duration-menu) var(--ease-standard);
+  --animate-sheet-in: sheet-in var(--duration-panel) var(--ease-standard);
+  --animate-sheet-out: sheet-out var(--duration-menu) var(--ease-standard);
+  --animate-accordion-down: accordion-down var(--duration-menu) var(--ease-standard);
+  --animate-accordion-up: accordion-up var(--duration-menu) var(--ease-standard);
+  --animate-spin: spin 900ms linear infinite;
+
+  @keyframes trame-draw {
+    from {
+      stroke-dashoffset: 1;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+  }
+  @keyframes fade-out {
+    to {
+      opacity: 0;
+    }
+  }
+  @keyframes panel-in {
+    from {
+      opacity: 0;
+      transform: translateY(6px) scale(0.98);
+    }
+  }
+  @keyframes panel-out {
+    to {
+      opacity: 0;
+      transform: translateY(6px) scale(0.98);
+    }
+  }
+  @keyframes sheet-in {
+    from {
+      transform: translate3d(var(--sheet-from-x, 0), var(--sheet-from-y, 0), 0);
+    }
+  }
+  @keyframes sheet-out {
+    to {
+      transform: translate3d(var(--sheet-from-x, 0), var(--sheet-from-y, 0), 0);
+    }
+  }
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+/*
+ * Valeurs qui varient selon la taille d'écran ou le contexte : déclarées hors de
+ * @theme et référencées par les tokens ci-dessus.
+ */
+:root {
+  /* Durées (DESIGN §7) : utilisées via `duration-(--duration-hover)` etc. */
+  --duration-hover: 120ms;
+  --duration-menu: 200ms;
+  --duration-panel: 280ms;
+  --duration-trame: 1400ms;
+
+  --leading-display: 1.05;
+  --leading-h1: 1.1;
+  --leading-h2: 1.15;
+  --leading-h3: 1.25;
+
+  --space-section: 6rem; /* 96 px */
+  --space-gutter: 1rem; /* 16 px */
+  --space-margin: 1.25rem; /* 20 px */
+  --space-header: 4rem; /* 64 px */
+
+  /* Anneau de focus (DESIGN §8) : green-700 sur clair, gold-500 sur les surfaces vertes. */
+  --focus-color: var(--color-green-700);
+}
+
+@media (min-width: 48rem) {
+  :root {
+    --space-gutter: 1.5rem; /* 24 px */
+    --space-margin: 2.5rem; /* 40 px */
+  }
+}
+
+@media (min-width: 64rem) {
+  :root {
+    --leading-display: 1.02;
+    --leading-h1: 1.08;
+    --leading-h2: 1.12;
+    --leading-h3: 1.2;
+    --space-section: 9rem; /* 144 px */
+    --space-header: 4.5rem; /* 72 px */
+  }
+}
+
+@media (min-width: 80rem) {
+  :root {
+    --space-margin: 4rem; /* 64 px */
+  }
+}
+
+/* Arabe : Noto Naskh Arabic (titres), IBM Plex Sans Arabic (texte). */
+:root:lang(ar),
+[lang='ar'] {
+  --font-display:
+    var(--font-noto-naskh-arabic), var(--font-baskervville), 'Noto Naskh Arabic', serif;
+  --font-sans:
+    var(--font-plex-arabic), var(--font-open-sans), 'IBM Plex Sans Arabic', system-ui, sans-serif;
+}

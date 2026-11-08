@@ -1,0 +1,1578 @@
+{
+  "metadata": {
+    "siteName": "Amana Conseil",
+    "defaultTitle": "Amana Conseil — Islamic finance and takaful advisory",
+    "defaultDescription": "Advisory, Sharia compliance audit and training in Islamic finance and insurance, based in Douala.",
+    "ogHomeTitle": "Islamic finance training, compliance audit and advisory",
+    "ogTagline": "Islamic finance and insurance · Douala, Cameroon"
+  },
+  "home": {
+    "title": "Amana Conseil",
+    "tagline": "Ethics, Compliance, Innovation",
+    "placeholder": "Site under construction. This temporary page confirms that internationalisation works."
+  },
+  "common": {
+    "skipToContent": "Skip to content",
+    "languageSwitcher": "Change language"
+  },
+  "header": {
+    "home": "Amana Conseil, home",
+    "mainNav": "Main navigation",
+    "menu": "Menu",
+    "openMenu": "Open menu",
+    "search": "Search",
+    "account": "My account",
+    "cart": "{count, plural, =0 {Cart, empty} one {Cart, # item} other {Cart, # items}}",
+    "appointment": "Book a meeting",
+    "pillarOverview": "Explore {pillar}"
+  },
+  "footer": {
+    "tagline": "Ethics, compliance, innovation: advisory, audit and training in Islamic finance and insurance, from Douala.",
+    "newsletterTitle": "Newsletter",
+    "newsletterText": "One letter a month: regulation, courses, webinars.",
+    "siteMap": "Site map",
+    "contactTitle": "Contact us",
+    "social": "Social networks",
+    "disclaimer": "Amana Conseil informs and trains. The content of this site is neither a fatwa nor personalised financial advice; for any binding decision, consult a qualified professional.",
+    "copyright": "© {year} Amana Conseil. All rights reserved."
+  },
+  "ui": {
+    "button": {
+      "loading": "Loading"
+    },
+    "field": {
+      "optional": "optional"
+    },
+    "stepper": {
+      "label": "Form steps",
+      "progress": "Step {current} of {total}",
+      "complete": "completed",
+      "current": "current",
+      "upcoming": "upcoming"
+    },
+    "breadcrumb": {
+      "label": "Breadcrumb"
+    },
+    "pagination": {
+      "label": "Pagination",
+      "previous": "Previous",
+      "next": "Next",
+      "page": "Page {page}",
+      "position": "Page {page} of {pageCount}"
+    },
+    "progress": {
+      "value": "{value}%"
+    },
+    "price": {
+      "free": "Free",
+      "current": "Current price:",
+      "compareAt": "Original price:"
+    },
+    "table": {
+      "sortAscending": "sort ascending",
+      "sortDescending": "sort descending"
+    },
+    "prose": {
+      "keyPoint": "Key takeaway",
+      "warning": "Warning"
+    },
+    "dialog": {
+      "close": "Close"
+    },
+    "toast": {
+      "region": "Notification",
+      "viewport": "Notifications ({hotkey})",
+      "close": "Dismiss notification"
+    },
+    "duration": {
+      "minutes": "{minutes} min",
+      "hours": "{hours} h",
+      "hoursMinutes": "{hours} h {minutes}"
+    },
+    "course": {
+      "freePreview": "Free preview",
+      "instructor": "With {name}",
+      "durationLabel": "Duration:",
+      "levelLabel": "Level:",
+      "level": {
+        "beginner": "Beginner",
+        "intermediate": "Intermediate",
+        "advanced": "Advanced"
+      }
+    },
+    "capsule": {
+      "roles": "Roles",
+      "durationLabel": "Duration:",
+      "duration": "{minutes} min",
+      "preview": "Preview"
+    },
+    "purchase": {
+      "label": "Course purchase",
+      "includes": "Included"
+    },
+    "faq": {
+      "title": "Frequently asked questions"
+    },
+    "service": {
+      "problem": "What our clients face",
+      "offers": "Our offer",
+      "offersNav": "Offers in this practice",
+      "offerDetails": "Learn more: {offer}",
+      "method": "Our method",
+      "step": "Step {number}:",
+      "deliverables": "Typical deliverables",
+      "cases": "Case studies"
+    },
+    "whatsapp": {
+      "label": "WhatsApp",
+      "newWindow": "(opens in a new window)",
+      "region": "WhatsApp contact"
+    }
+  },
+  "styleguide": {
+    "metaTitle": "Design system",
+    "title": "Design system",
+    "lead": "Tokens, components and patterns of the website and learning platform, in every state. Internal page, not indexed.",
+    "compareLink": "Compare French and Arabic side by side",
+    "backLink": "Back to the guide",
+    "compareTitle": "French and Arabic side by side",
+    "compareFrameFr": "Guide in French",
+    "compareFrameAr": "Guide in Arabic (right to left)",
+    "tocLabel": "Guide contents",
+    "sections": {
+      "colors": {
+        "title": "Colours",
+        "lead": "Green dominates, gold accents, sand in places. Brand gold is never text on a light background: gold-700 replaces it."
+      },
+      "typography": {
+        "title": "Typography",
+        "lead": "Baskerville for headings, Open Sans for text and interface. Fluid scale from 390 to 1440 px."
+      },
+      "spacing": {
+        "title": "Spacing, shapes and motion",
+        "lead": "Base 4, ranked radii, a single shadow for what floats, three durations."
+      },
+      "brand": {
+        "title": "Brand",
+        "lead": "The logo in three variants and the Trame, the identity’s single memorable element."
+      },
+      "buttons": {
+        "title": "Buttons and links",
+        "lead": "40 and 48 px heights, 44 px minimum touch target, gold focus on green and green focus on light."
+      },
+      "forms": {
+        "title": "Forms",
+        "lead": "Label above, help below, errors that say what to fix. Native controls, no JavaScript."
+      },
+      "overlays": {
+        "title": "Overlays",
+        "lead": "Dialog, sheets, popover, tooltip and toast, built on Radix."
+      },
+      "navigation": {
+        "title": "Navigation",
+        "lead": "Tabs, accordion, breadcrumb and pagination; chevrons follow the reading direction."
+      },
+      "display": {
+        "title": "Display",
+        "lead": "Badges, tags, avatars, loading, empty states, progress, alerts, prices and tables."
+      },
+      "prose": {
+        "title": "Article",
+        "lead": "Styles for editorial content from the CMS, with “Key takeaway” and “Warning” boxes."
+      },
+      "patterns": {
+        "title": "Patterns",
+        "lead": "The blocks the website and the platform assemble, fed by typed props."
+      }
+    },
+    "states": {
+      "rest": "Rest",
+      "hover": "Hover",
+      "focus": "Focus",
+      "active": "Active",
+      "disabled": "Disabled",
+      "error": "Error",
+      "loading": "Loading",
+      "checked": "Checked",
+      "indeterminate": "Mixed",
+      "on": "On"
+    },
+    "colors": {
+      "brand": "Brand colours",
+      "derived": "Derived colours",
+      "system": "System states",
+      "pairs": "Verified contrast pairs",
+      "pairsCaption": "Each pair is tested automatically (tests/a11y/contrast.test.ts).",
+      "fg": "Foreground",
+      "bg": "Background",
+      "use": "Use",
+      "ratio": "Ratio",
+      "minimum": "Threshold",
+      "uses": {
+        "text": "Text",
+        "large": "Heading ≥ 24 px",
+        "ui": "Graphic element"
+      },
+      "roles": {
+        "green-900": "Hero, “night” areas",
+        "green-800": "Primary hover",
+        "green-700": "Institutional colour",
+        "green-50": "Selection, subtle active",
+        "gold-700": "Gold for text on light",
+        "gold-500": "Accents, Trame, gold button",
+        "gold-200": "Progress, badges",
+        "sand-300": "Testimonial, insets",
+        "sand-100": "Light inset background",
+        "paper": "Page background",
+        "ink": "Main text",
+        "ink-muted": "Secondary text",
+        "ink-subtle": "Metadata",
+        "line": "Rules and borders",
+        "line-strong": "Field borders",
+        "danger": "Error",
+        "danger-50": "Error background",
+        "warning": "Warning",
+        "warning-50": "Warning background",
+        "info": "Information",
+        "info-50": "Information background"
+      }
+    },
+    "typography": {
+      "headline": "Islamic finance, mastered and compliant.",
+      "sentence": "Our audits check your products against AAOIFI standards and COBAC regulation.",
+      "body": "A firm that trains, audits and supports banks, insurers and companies across the CEMAC zone in their participatory finance projects, with rigour and transparency.",
+      "range": "{min}–{max} px",
+      "fixed": "{size} px",
+      "scale": {
+        "display": "Hero title",
+        "h1": "Page title",
+        "h2": "Section",
+        "h3": "Subsection, card title",
+        "h4": "Subheading (Open Sans 600)",
+        "body-lg": "Lead",
+        "body": "Body text",
+        "small": "Metadata",
+        "caption": "Notes, captions"
+      },
+      "numerals": "Tabular figures",
+      "italic": "Italics are reserved for quotes and testimonials."
+    },
+    "spacing": {
+      "scale": "Spacing scale (base 4)",
+      "radii": "Radii",
+      "radius": {
+        "media": "Media",
+        "control": "Controls",
+        "panel": "Panels, dialogs",
+        "pill": "Tags"
+      },
+      "shadow": "Shadow: only for what floats",
+      "shadowSample": "Menu, dialog, purchase panel",
+      "motion": "Motion",
+      "durations": {
+        "hover": "Hover",
+        "menu": "Menu, accordion",
+        "panel": "Dialog, panel",
+        "trame": "Trame drawing (once)"
+      },
+      "easing": "Standard curve:",
+      "hoverMe": "Hover to see the duration"
+    },
+    "brand": {
+      "logoColor": "Colour on light",
+      "logoInverse": "White on green",
+      "logoSymbol": "Symbol only",
+      "logoTodo": "Temporary logo: awaiting the official vector file (client TODO).",
+      "trameHero": "Gold on green-900: drawn once on load, then static",
+      "trameLight": "Gold at 12% on light: watermark",
+      "trameFragment": "Fragment: empty states, section breaks"
+    },
+    "buttons": {
+      "primary": "Primary",
+      "secondary": "Secondary",
+      "gold": "Gold, on green only",
+      "outlineLight": "Light outline, on green",
+      "ghost": "Tertiary",
+      "sizes": "Sizes",
+      "sizeMd": "40 px",
+      "sizeLg": "48 px",
+      "primaryLabel": "Browse courses",
+      "secondaryLabel": "Request an audit",
+      "goldLabel": "Book a meeting",
+      "ghostLabel": "Cancel",
+      "iconButtons": "Icon buttons",
+      "iconLabel": "Share",
+      "links": "Links",
+      "inlineLink": "Read the <link>detailed syllabus</link> before you enrol.",
+      "standaloneLink": "See the full catalogue",
+      "withIcon": "Download the syllabus"
+    },
+    "forms": {
+      "name": "Full name",
+      "namePlaceholder": "Aminatou Bello",
+      "email": "Email address",
+      "emailHint": "We reply within two working days.",
+      "emailError": "Enter a complete email address, for example name@company.cm.",
+      "organization": "Organisation",
+      "message": "Your needs",
+      "messageHint": "Context, deadline, number of people involved.",
+      "need": "Request type",
+      "needPlaceholder": "Choose a request type",
+      "needs": {
+        "audit": "Compliance audit",
+        "advisory": "Advisory and support",
+        "training": "Corporate training",
+        "partnership": "Partnership"
+      },
+      "consent": "I agree to be contacted by Amana Conseil about my request.",
+      "consentHint": "Your data is never sold.",
+      "newsletter": "Receive the newsletter",
+      "themes": "Followed topics",
+      "channel": "Preferred contact channel",
+      "channels": {
+        "phone": "Phone",
+        "email": "Email",
+        "whatsapp": "WhatsApp"
+      },
+      "dataSaver": "Data saver",
+      "dataSaverHint": "Low-quality video, transcript shown first.",
+      "steps": {
+        "need": "Your needs",
+        "organization": "Your organisation",
+        "contact": "Your details"
+      },
+      "stepperAt": "Second step in progress"
+    },
+    "overlays": {
+      "openDialog": "Open the dialog",
+      "dialogTitle": "Confirm registration",
+      "dialogDescription": "You are registering for the 14 November webinar on sukuk structuring.",
+      "dialogBody": "A connection link will be emailed to you the day before.",
+      "confirm": "Confirm",
+      "cancel": "Cancel",
+      "sheetStart": "Start-side sheet",
+      "sheetEnd": "End-side sheet",
+      "sheetBottom": "Bottom sheet",
+      "sheetTitle": "Filter the catalogue",
+      "sheetBody": "Topic, level, duration and price: filters apply as soon as the panel closes.",
+      "popoverTrigger": "What is takaful?",
+      "popoverTitle": "Takaful",
+      "popoverBody": "Insurance based on pooling and mutual help, consistent with the principles of Islamic finance.",
+      "tooltipLabel": "Download the syllabus",
+      "tooltip": "PDF, 240 KB",
+      "toastTrigger": "Add to cart",
+      "toastTitle": "Added to cart",
+      "toastDescription": "Introduction to Islamic finance",
+      "toastErrorTrigger": "Simulate an error",
+      "toastErrorTitle": "Payment not completed",
+      "toastErrorDescription": "Your Mobile Money operator did not confirm. Try again or choose another method."
+    },
+    "navigation": {
+      "tabsLabel": "Lesson content",
+      "tabs": {
+        "transcript": "Transcript",
+        "resources": "Resources",
+        "notes": "Notes"
+      },
+      "tabPanels": {
+        "transcript": "In this lesson, we distinguish murabaha from a conventional credit sale.",
+        "resources": "Summary sheet (PDF) and glossary of terms used.",
+        "notes": "Your notes are private and saved automatically."
+      },
+      "accordion": "Accordion",
+      "breadcrumb": "Breadcrumb",
+      "pagination": "Pagination",
+      "breadcrumbDemo": "Breadcrumb (example)"
+    },
+    "display": {
+      "badges": "Badges",
+      "badge": {
+        "freePreview": "Free preview",
+        "new": "New",
+        "paid": "Paid",
+        "pending": "Pending",
+        "overdue": "Overdue",
+        "webinar": "Webinar",
+        "onGreen": "On green",
+        "dueSoon": "Due soon"
+      },
+      "tags": "Tags",
+      "tagThemes": {
+        "islamicFinance": "Islamic finance",
+        "takaful": "Takaful",
+        "compliance": "Compliance",
+        "accounting": "Accounting"
+      },
+      "removeTag": "Remove filter {label}",
+      "avatars": "Avatars",
+      "skeleton": "Loading",
+      "skeletonLabel": "Loading courses",
+      "empty": "Empty state",
+      "emptyTitle": "You don’t have any courses yet.",
+      "emptyDescription": "Purchased courses appear here, with your progress.",
+      "emptyAction": "Browse the catalogue",
+      "progress": "Progress",
+      "progressCourse": "Course progress",
+      "progressLicenses": "Licences used",
+      "alerts": "Alerts",
+      "alert": {
+        "infoTitle": "Live session on 14 November",
+        "infoText": "The replay will be available 48 hours after the session.",
+        "successTitle": "Request sent",
+        "successText": "An advisor will reply within two working days.",
+        "warningTitle": "Licence expiring soon",
+        "warningText": "Your business licence expires in 7 days.",
+        "dangerTitle": "Could not send",
+        "dangerText": "The connection was interrupted. Your answers are kept: try again."
+      },
+      "prices": "Prices",
+      "table": "Table",
+      "tableLabel": "Team follow-up",
+      "tableCaption": "Sort by column; on mobile, the first column stays visible while scrolling.",
+      "columns": {
+        "member": "Team member",
+        "team": "Team",
+        "capsules": "Assigned capsules",
+        "progress": "Progress",
+        "score": "Average score",
+        "activity": "Last activity"
+      },
+      "teams": {
+        "compliance": "Compliance",
+        "front": "Front office",
+        "back": "Back office"
+      },
+      "activity": {
+        "today": "Today",
+        "yesterday": "Yesterday",
+        "lastWeek": "6 days ago"
+      }
+    },
+    "prose": {
+      "title": "Understanding murabaha",
+      "intro": "Murabaha is a sale at a known margin: the bank buys an asset and resells it to the client at an agreed price, payable later. Unlike an interest-bearing loan, the bank’s gain comes from a real good.",
+      "h2": "Conditions of validity",
+      "p1": "Three conditions are checked during a compliance audit:",
+      "li1": "the bank actually owns the asset before reselling it;",
+      "li2": "the margin is fixed in the contract and does not change;",
+      "li3": "no late-payment penalty benefits the bank.",
+      "h3": "Steps of a transaction",
+      "ol1": "The client states the need and signs a promise to purchase.",
+      "ol2": "The bank acquires the asset from the supplier.",
+      "ol3": "The bank resells the asset to the client with the agreed margin.",
+      "quote": "Compliance is not a constraint added to the product: it is its very structure.",
+      "quoteCite": "Amana Conseil compliance committee",
+      "tableLabel": "Murabaha compared with conventional credit",
+      "tableHead1": "Criterion",
+      "tableHead2": "Murabaha",
+      "tableHead3": "Conventional credit",
+      "row1": "Return",
+      "row1a": "Fixed commercial margin",
+      "row1b": "Interest on capital",
+      "row2": "Underlying asset",
+      "row2a": "Required",
+      "row2b": "Not required",
+      "keyPoint": "Murabaha rewards a real sale, not the passage of time. If the bank never owns the asset, the transaction is not compliant.",
+      "warning": "This content explains general principles. It is neither a fatwa nor personalised financial advice."
+    },
+    "patterns": {
+      "header": "Header",
+      "headerNote": "This page’s header is the real component: transparent over the green hero, solid after scrolling. Below 1280 px, a full-screen drawer.",
+      "pillarIndex": "Practice index",
+      "courseCards": "Course cards",
+      "capsules": "Business capsules",
+      "capsulesLabel": "Capsules in the library",
+      "purchase": "Purchase panel",
+      "stats": "Key figures",
+      "testimonial": "Testimonial",
+      "faq": "Frequently asked questions",
+      "cta": "Call-to-action band",
+      "service": "Service template (excerpt)",
+      "whatsapp": "The floating WhatsApp button sits at the bottom of the screen, on the end side.",
+      "footer": "The real footer closes this page."
+    },
+    "demo": {
+      "nav": {
+        "training": "Training",
+        "trainingTitle": "Training",
+        "trainingSummary": "Online courses for individuals, capsules and licences for businesses.",
+        "audit": "Audit",
+        "auditTitle": "Audit and compliance",
+        "auditSummary": "Check your products, contracts and processes against Islamic finance standards.",
+        "advisory": "Advisory",
+        "advisoryTitle": "Advisory and support",
+        "advisorySummary": "Structure an offer, open an Islamic window, set up a compliance committee.",
+        "takaful": "Takaful",
+        "takafulTitle": "Takaful and finance",
+        "takafulSummary": "Compliant insurance and financing products for individuals and businesses.",
+        "resources": "Resources",
+        "about": "About",
+        "offers": {
+          "courses": "Course catalogue",
+          "coursesDescription": "From the basics to product structuring.",
+          "business": "Business capsules",
+          "businessDescription": "3 to 10 minute formats, per-seat licences.",
+          "inPerson": "In-person sessions",
+          "inPersonDescription": "Douala, Yaoundé and live online.",
+          "products": "Product audit",
+          "productsDescription": "Analysis of contracts and financial flows.",
+          "window": "Islamic window audit",
+          "windowDescription": "Segregation of funds, governance, reporting.",
+          "followUp": "Compliance follow-up",
+          "followUpDescription": "Periodic review and committee report.",
+          "structuring": "Offer structuring",
+          "committee": "Compliance committee",
+          "policies": "Policies and procedures",
+          "takafulProducts": "Takaful products",
+          "financing": "Financing solutions",
+          "takafulFaq": "Questions about takaful"
+        },
+        "featuredKind": "Online course",
+        "featuredTitle": "Introduction to Islamic finance",
+        "featuredDescription": "Twelve lessons to understand the principles and basic contracts.",
+        "featuredCta": "See the course",
+        "featuredAuditKind": "Free guide",
+        "featuredAuditTitle": "Preparing your first Sharia audit",
+        "featuredAuditCta": "Read the guide"
+      },
+      "pillars": {
+        "trainingSummary": "Online courses to understand and practise, capsules to train your teams at scale.",
+        "auditSummary": "An independent view on the compliance of your products, contracts and processes.",
+        "advisorySummary": "From idea to approval: we structure your offers and your governance.",
+        "takafulSummary": "Insurance and financing solutions based on mutual help and risk sharing."
+      },
+      "courses": {
+        "theme1": "Islamic finance",
+        "title1": "Introduction to Islamic finance",
+        "theme2": "Takaful",
+        "title2": "Designing a compliant takaful product",
+        "theme3": "Compliance",
+        "title3": "Running a Sharia compliance committee"
+      },
+      "instructors": {
+        "one": "Aminatou Bello",
+        "two": "Ibrahim Ndiaye",
+        "three": "Mariam Fotso"
+      },
+      "capsules": {
+        "c1": "Spotting an interest-based transaction",
+        "c1Summary": "Three signals to look for in a financing contract.",
+        "c2": "Explaining murabaha to a client",
+        "c2Summary": "The right words at the branch, without jargon.",
+        "c3": "Handling a takaful claim",
+        "c3Summary": "From the first call to settlement.",
+        "roles": {
+          "compliance": "Compliance",
+          "front": "Front office",
+          "back": "Back office",
+          "management": "Management"
+        }
+      },
+      "purchase": {
+        "title": "Introduction to Islamic finance",
+        "buy": "Buy the course",
+        "addToCart": "Add to cart",
+        "note": "MTN and Orange Mobile Money, bank card or transfer.",
+        "include1": "12 video lessons, 3 h 20",
+        "include2": "Graded quizzes and summary sheets",
+        "include3": "Certificate verifiable by QR code",
+        "include4": "12 months of access"
+      },
+      "stats": {
+        "s1": "Since 2019, Amana Conseil has trained ",
+        "l1": "professionals",
+        "s2": ", supported ",
+        "l2": "institutions",
+        "s3": " and carried out ",
+        "l3": "compliance audits",
+        "s4": " across the CEMAC zone."
+      },
+      "testimonial": {
+        "quote": "The audit gave us a clear roadmap. Six months later, our Islamic window was approved.",
+        "author": "Jean-Paul Mbarga",
+        "role": "Head of operations",
+        "organization": "Partner bank (client TODO)"
+      },
+      "faq": {
+        "q1": "How long does a compliance audit take?",
+        "a1": "Between three and eight weeks depending on scope: number of products, contracts and branches.\n\nA precise schedule is included in the proposal.",
+        "q2": "Do you issue fatwas?",
+        "a2": "No. We inform, train and audit. Religious opinions are the responsibility of each institution’s compliance committee.",
+        "q3": "Can I pay for a course with Mobile Money?",
+        "a3": "Yes, MTN Mobile Money and Orange Money are accepted, as well as bank cards and transfers."
+      },
+      "cta": {
+        "title": "Let’s talk about your project",
+        "text": "A first 30-minute conversation, with no commitment, to frame your needs.",
+        "primary": "Book a meeting",
+        "secondary": "Request a quote"
+      },
+      "service": {
+        "breadcrumbHome": "Home",
+        "breadcrumbPillar": "Audit and compliance",
+        "breadcrumbPage": "Islamic window audit",
+        "title": "Islamic window audit",
+        "lead": "Check that your Islamic window meets the required segregation of funds, governance and reporting.",
+        "primary": "Request an audit",
+        "step1": "Scoping",
+        "step1Text": "Scope, contacts and schedule.",
+        "step2": "Document review",
+        "step2Text": "Contracts, procedures and accounting flows.",
+        "step3": "Interviews",
+        "step3Text": "Business teams, compliance and management.",
+        "step4": "Report",
+        "step4Text": "Findings, risks and a prioritised action plan."
+      },
+      "footer": {
+        "training": "Training",
+        "services": "Services",
+        "company": "Amana Conseil",
+        "catalogue": "Course catalogue",
+        "business": "For businesses",
+        "verify": "Verify a certificate",
+        "audit": "Audit and compliance",
+        "advisory": "Advisory and support",
+        "takaful": "Takaful and finance",
+        "about": "About",
+        "resources": "Resources",
+        "contact": "Contact",
+        "address1": "Akwa, Douala (client TODO)",
+        "address2": "Cameroon",
+        "phone": "+237 6XX XX XX XX",
+        "email": "contact@amana-conseil.cm",
+        "whatsapp": "Message us on WhatsApp",
+        "legal": "Legal notice",
+        "terms": "Terms of sale",
+        "privacy": "Privacy",
+        "newsletterEmail": "Email address",
+        "newsletterSubmit": "Subscribe"
+      }
+    }
+  },
+  "site": {
+    "chrome": {
+      "summaries": {
+        "formation": "Online courses with certificates for individuals, role-based capsules for companies.",
+        "audit": "An independent review of your products, contracts and processes.",
+        "conseil": "Structure, launch and run an Islamic finance business.",
+        "takaful": "Understand and design compliant insurance and financing solutions.",
+        "ressources": "Articles, guides, glossary and webinars to understand Islamic finance."
+      },
+      "short": {
+        "formation": "Training",
+        "audit": "Audit",
+        "conseil": "Advisory",
+        "takaful": "Takaful",
+        "ressources": "Resources",
+        "a-propos": "About"
+      },
+      "whatsapp": {
+        "default": "Hello Amana Conseil, I would like some information.",
+        "formation": "Hello, I would like information about your Islamic finance training.",
+        "audit": "Hello, I would like to discuss a Sharia compliance audit.",
+        "conseil": "Hello, I would like support on an Islamic finance project.",
+        "takaful": "Hello, I would like a call back about takaful.",
+        "ressources": "Hello, I have a question about your resources.",
+        "devis": "Hello, I would like a quote."
+      },
+      "whatsappLabel": "Message us on WhatsApp"
+    },
+    "pillars": {
+      "title": "Our expertise",
+      "formation": {
+        "title": "Training",
+        "summary": "Online courses for individuals and short capsules for teams, with a verifiable certificate.",
+        "action": "Get catalogue updates",
+        "offers": {
+          "courses": "Online courses",
+          "business": "For companies",
+          "inPerson": "In-person sessions"
+        }
+      },
+      "audit": {
+        "title": "Audit and compliance",
+        "summary": "An independent review of your products, contracts and processes against reference standards.",
+        "action": "Request an audit quote"
+      },
+      "conseil": {
+        "title": "Advisory and support",
+        "summary": "From product design to opening an Islamic window, step-by-step support.",
+        "action": "Book an appointment"
+      },
+      "takaful": {
+        "title": "Takaful and financial solutions",
+        "summary": "Understand, design and choose compliant insurance and financing solutions.",
+        "action": "Request a call back"
+      }
+    },
+    "blocks": {
+      "partners": "They trust us",
+      "contactUs": "Contact us",
+      "appointment": "Book an appointment",
+      "requestQuote": "Request a quote"
+    },
+    "cases": {
+      "home": "Home",
+      "title": "Case studies",
+      "lead": "Audit, advisory and training engagements, from challenge to results. Clients remain anonymous until they authorise us to show their name.",
+      "metaDescription": "Audit, advisory and training engagements told from challenge to results, with clients anonymised unless they agree to be named.",
+      "listTitle": "All case studies",
+      "empty": "No case study has been published yet.",
+      "anonymous": "Anonymised client",
+      "client": "Client",
+      "sector": "Sector",
+      "services": "Expertise involved",
+      "keyFigures": "Key figures of the engagement",
+      "challenge": "The challenge",
+      "approach": "Our approach",
+      "results": "The results",
+      "ctaTitle": "A similar project?",
+      "ctaText": "Tell us about your situation: we will suggest an approach and a timeline.",
+      "ctaPrimary": "Request a quote",
+      "ctaSecondary": "Book an appointment"
+    },
+    "team": {
+      "qualifications": "Qualifications",
+      "linkedin": "{name}’s LinkedIn profile"
+    },
+    "resources": {
+      "home": "Home",
+      "title": "Resources",
+      "lead": "Articles, practical guides, a glossary and webinars to understand Islamic finance and insurance, without jargon.",
+      "jumpTo": "Jump to a section",
+      "readingTime": "{minutes, plural, one {# min read} other {# min read}}",
+      "pages": "{count, plural, one {# page} other {# pages}}",
+      "kinds": {
+        "articles": "Article",
+        "guides": "Guide",
+        "webinars": "Webinar"
+      },
+      "sections": {
+        "articles": "Latest articles",
+        "guides": "Downloadable guides",
+        "webinars": "Webinars",
+        "glossary": "Glossary",
+        "cases": "Case studies"
+      },
+      "allResources": "All resources",
+      "allArticles": "All articles",
+      "allGuides": "All guides",
+      "allWebinars": "All webinars",
+      "allTerms": "Browse the glossary",
+      "glossaryLead": "{count, plural, one {# term explained} other {# terms explained}} simply, from murabaha to takaful, with their Arabic script."
+    },
+    "guides": {
+      "title": "Guides",
+      "lead": "Practical guides to download for free, in exchange for an email address.",
+      "empty": "No guide has been published yet.",
+      "getGuide": "Get the guide",
+      "format": "{count, plural, one {#-page PDF guide} other {#-page PDF guide}}",
+      "formTitle": "Get the guide"
+    },
+    "formation": {
+      "newsletterTitle": "Hear about new courses",
+      "newsletterText": "An email for each new course or capsule, then at most one newsletter a month. Unsubscribe in one click."
+    },
+    "disclaimer": {
+      "title": "General information",
+      "text": "This content is provided for information and training purposes. It is neither personalised financial advice nor a religious opinion.",
+      "more": "Read the full disclaimer"
+    },
+    "services": {
+      "home": "Home",
+      "anonymousClient": "Anonymised client",
+      "problemTitle": "Your situation",
+      "ctaTitle": "Let’s talk about your needs",
+      "ctaText": "Leave your details: a consultant will reply within two business days.",
+      "audit": {
+        "title": "Audit and compliance",
+        "metaDescription": "Sharia compliance audits of institutions, Islamic windows and financial products, based on AAOIFI standards and CEMAC regulations.",
+        "lead": "An independent review of your products, contracts and processes against the principles of Islamic finance and reference standards.",
+        "action": "Request an audit quote",
+        "problemTitle": "Why an audit?",
+        "problem1": "A product presented as compliant puts the institution’s reputation on the line. Without an independent review, a gap between promise and practice can go unnoticed until a client or the regulator points it out.",
+        "problem2": "An audit gives management and the compliance committee a clear view of the gaps, their severity and the corrections required.",
+        "ctaTitle": "Plan an audit",
+        "ctaText": "Describe your institution and the intended scope: we will come back to you with a proposal."
+      },
+      "conseil": {
+        "title": "Advisory and support",
+        "metaDescription": "Product structuring, Islamic windows, policies and procedures, compliance committees: step-by-step support across the CEMAC region.",
+        "lead": "From product design to opening an Islamic window, we support institutions and project owners at every stage.",
+        "action": "Book an appointment",
+        "problemTitle": "What our clients tell us",
+        "problem1": "Demand for compliant solutions is growing, but the skills to design, document and run them remain scarce in Central Africa.",
+        "problem2": "We bring a proven method, document templates and skills transfer so your teams become autonomous.",
+        "ctaTitle": "A project to structure?",
+        "ctaText": "A free, no-commitment thirty-minute call to understand your needs."
+      },
+      "takaful": {
+        "title": "Takaful and finance",
+        "metaDescription": "Understand takaful and Islamic financing: product design, corporate takaful, SME financing. FAQ and support.",
+        "lead": "Takaful is insurance based on mutual help and risk sharing. We help insurers, companies and individuals understand and implement it.",
+        "action": "Request a call back",
+        "problemTitle": "Takaful in brief",
+        "problem1": "In takaful, participants pool their contributions in a fund that belongs to them. The operator manages the fund for a transparent fee; surpluses may be redistributed.",
+        "problem2": "Still little known in the CEMAC region, it meets a real demand for compliant protection. We explain how it works and support its design.",
+        "ctaTitle": "Request a call back",
+        "ctaText": "Leave your details: an advisor will call you back to answer your questions."
+      }
+    },
+    "articles": {
+      "title": "Articles",
+      "titleCategory": "Articles: {category}",
+      "lead": "Analysis and explainers on Islamic finance and insurance, compliance and regulation.",
+      "categories": "Categories",
+      "allCategories": "All categories",
+      "empty": "No article in this category yet.",
+      "toc": "Contents",
+      "by": "By {authors}",
+      "aboutAuthor": "About the author",
+      "writtenBy": "Article written by",
+      "related": "Read next",
+      "newsletterTitle": "Get the next articles",
+      "newsletterText": "One newsletter a month: new articles, regulatory news and practical resources. Unsubscribe in one click."
+    },
+    "share": {
+      "title": "Share this article",
+      "on": "Share on {network} (new tab)"
+    },
+    "glossary": {
+      "title": "Glossary",
+      "lead": "Islamic finance and insurance terms explained simply, with their transliteration and Arabic script.",
+      "letters": "Alphabet",
+      "arabic": "Arabic script",
+      "transliteration": "Transliteration",
+      "related": "Related terms",
+      "back": "Back to the glossary"
+    },
+    "webinars": {
+      "title": "Webinars",
+      "lead": "One-hour online sessions to explore a topic and ask our experts your questions.",
+      "upcoming": "Upcoming webinars",
+      "noUpcoming": "No webinar scheduled for now",
+      "noUpcomingText": "Subscribe to the newsletter to hear about the next sessions.",
+      "replays": "Replays",
+      "replaysLead": "Past sessions, available on request.",
+      "speakers": "With {names}",
+      "register": "Register",
+      "askReplay": "Request the replay"
+    },
+    "contact": {
+      "home": "Home",
+      "title": "Contact",
+      "lead": "A question, a project, a training request? Write to us: a consultant will reply within two business days.",
+      "formTitle": "Write to us",
+      "detailsTitle": "Contact details",
+      "whatsapp": "Message us on WhatsApp",
+      "whatsappMessage": "Hello Amana Conseil, I would like some information.",
+      "appointment": "Book an appointment online",
+      "quote": "Request a detailed quote",
+      "map": "View on Google Maps",
+      "mapCaption": "Opens in a new tab. TODO(client): exact office address."
+    },
+    "quote": {
+      "home": "Home",
+      "title": "Request a quote",
+      "lead": "Three steps, about three minutes. The more precise your request, the more precise our proposal.",
+      "asideTitle": "Prefer to talk first?",
+      "asideText": "A free, no-commitment thirty-minute call often helps clarify the need.",
+      "asideAppointment": "Book an appointment",
+      "asideContact": "Ask a question"
+    },
+    "appointment": {
+      "home": "Home",
+      "title": "Book an appointment",
+      "lead": "Choose the type of meeting, then a slot in our calendar. The calendar only loads when you ask for it.",
+      "howTitle": "How it works",
+      "step1": "You pick a slot; the confirmation arrives by email.",
+      "step2": "We talk by video call or phone.",
+      "step3": "If needed, you receive a tailored proposal within two business days.",
+      "quote": "Prefer a written quote",
+      "contact": "Write to us"
+    },
+    "newsletter": {
+      "home": "Home",
+      "title": "Confirm your subscription",
+      "lead": "One click to confirm that you want to receive our newsletter. You can unsubscribe at any time."
+    },
+    "legal": {
+      "home": "Home",
+      "updated": "Last updated on",
+      "toc": "Contents",
+      "pendingTitle": "Document being drafted",
+      "pendingText": "This document is undergoing legal review. If you have any questions, write to us.",
+      "contact": "Contact us",
+      "titles": {
+        "mentions-legales": "Legal notice",
+        "cgv": "Terms of sale",
+        "cgu": "Terms of use",
+        "confidentialite": "Privacy policy",
+        "cookies": "Cookies and analytics",
+        "remboursement": "Refund policy",
+        "avertissement": "Disclaimer"
+      }
+    },
+    "search": {
+      "home": "Home",
+      "title": "Search",
+      "formLabel": "Search the site",
+      "label": "What are you looking for?",
+      "submit": "Search",
+      "hint": "E.g. murabaha, Sharia audit, corporate takaful. Tip: press “/” to search from any page.",
+      "summary": "{count, plural, =0 {No results for “{query}”} one {# result for “{query}”} other {# results for “{query}”}}",
+      "emptyTitle": "No results",
+      "emptyText": "Check the spelling or try a broader term. The glossary explains the main terms.",
+      "emptyAction": "Browse the glossary",
+      "kinds": {
+        "service": "Expertise",
+        "page": "Pages",
+        "article": "Articles",
+        "glossary": "Glossary",
+        "course": "Courses"
+      }
+    }
+  },
+  "recovery": {
+    "notFoundTitle": "This page cannot be found",
+    "notFoundText": "The link may be outdated or mistyped. Search for what you need or go straight to one of our areas of expertise.",
+    "errorTitle": "A problem is preventing this page from loading",
+    "errorText": "It is not your fault. Try again in a moment; if the problem persists, search or go to one of our areas of expertise.",
+    "retry": "Try again",
+    "reference": "Incident reference: {digest}",
+    "searchLabel": "Search the site",
+    "searchSubmit": "Search",
+    "pillarsTitle": "Or go straight to",
+    "pillars": {
+      "formation": "Training",
+      "audit": "Audit and compliance",
+      "conseil": "Advisory and support",
+      "takaful": "Takaful and finance",
+      "ressources": "Resources",
+      "contact": "Contact"
+    }
+  },
+  "forms": {
+    "choose": "Choose…",
+    "next": "Continue",
+    "previous": "Previous step",
+    "turnstileError": "The anti-bot check could not load. Check your connection and try again.",
+    "errors": {
+      "required": "This field is required.",
+      "email": "Invalid email address: check the format, for example name@domain.com.",
+      "tooShort": "A bit short: please add a few details.",
+      "tooLong": "Too long: please shorten your entry.",
+      "phone": "Invalid number: digits only, with the country code, for example +237 6 00 00 00 00.",
+      "choice": "Choose an option from the list.",
+      "consent": "Tick this box so that we can process your request.",
+      "number": "Enter a whole number, for example 25."
+    },
+    "submit": {
+      "invalid": {
+        "title": "Some fields need correcting",
+        "text": "Errors are shown under each field concerned."
+      },
+      "rate-limited": {
+        "title": "Too many submissions in a short time",
+        "text": "For security reasons, please wait {minutes, plural, one {# minute} other {# minutes}} before trying again."
+      },
+      "captcha": {
+        "title": "Anti-bot check failed",
+        "text": "Reload the page and try again. If the problem persists, message us on WhatsApp."
+      },
+      "server": {
+        "title": "Your request could not be saved",
+        "text": "A technical problem is preventing it. Try again in a moment or call us."
+      },
+      "not-found": {
+        "title": "This guide is no longer available",
+        "text": "It may have been withdrawn. See the list of available guides."
+      }
+    },
+    "types": {
+      "contact": "General question",
+      "audit": "Compliance audit",
+      "conseil": "Advisory",
+      "accompagnement": "Project support",
+      "formation-entreprise": "Training your teams",
+      "takaful": "Takaful and financing",
+      "partenariat": "Partnership"
+    },
+    "fields": {
+      "name": "Full name",
+      "email": "Email address",
+      "emailHint": "We only use it to reply to you.",
+      "phone": "Phone",
+      "phoneHint": "With the country code, for example +237 6 00 00 00 00.",
+      "organization": "Organisation",
+      "jobTitle": "Job title",
+      "city": "City"
+    },
+    "consent": {
+      "processing": "I agree that my information may be used to process my request.",
+      "processingHint": "It is neither sold nor shared with third parties.",
+      "newsletter": "I would like to receive the Amana Conseil newsletter.",
+      "newsletterHint": "At most one newsletter a month. A confirmation email will be sent; unsubscribe in one click."
+    },
+    "interests": {
+      "formation": "Training",
+      "audit": "Audit and compliance",
+      "takaful": "Takaful",
+      "reglementaire": "Regulatory news"
+    },
+    "options": {
+      "organizationKind": {
+        "banque": "Bank",
+        "microfinance": "Microfinance institution",
+        "assurance": "Insurance company",
+        "entreprise": "Company",
+        "institution": "Public institution or regulator",
+        "association": "Association or NGO",
+        "particulier": "Individual"
+      },
+      "auditScope": {
+        "etablissement": "The whole institution",
+        "produit": "One or more products",
+        "fenetre": "An Islamic window",
+        "processus": "Specific processes"
+      },
+      "projectStage": {
+        "idee": "Idea to explore",
+        "conception": "Being designed",
+        "lancement": "Launch planned",
+        "existant": "Existing business to improve"
+      },
+      "trainingFormat": {
+        "en-ligne": "Online",
+        "presentiel": "In person",
+        "mixte": "Blended"
+      },
+      "takafulAudience": {
+        "particulier": "For me or my family",
+        "entreprise": "For my company or my employees"
+      },
+      "partnerKind": {
+        "institution": "Institution or regulator",
+        "ecole": "School or university",
+        "media": "Media",
+        "entreprise": "Company",
+        "autre": "Other"
+      },
+      "timeframe": {
+        "urgent": "Within a month",
+        "trimestre": "Within three months",
+        "semestre": "Within six months",
+        "indefini": "Not yet defined"
+      }
+    },
+    "quote": {
+      "steps": {
+        "type": "Your request",
+        "context": "Context",
+        "contact": "Your details"
+      },
+      "headings": {
+        "0": "What is your request about?",
+        "1": "Tell us about the context",
+        "2": "How can we reach you?"
+      },
+      "typeLegend": "Type of request",
+      "typeHints": {
+        "audit": "Check the compliance of an institution, a window or a product.",
+        "conseil": "Structure a product, policies or a compliance committee.",
+        "accompagnement": "Get support from design to the launch of a business.",
+        "formation-entreprise": "Train your teams: capsules, licences, tailored sessions.",
+        "takaful": "Understand or design a takaful or financing solution.",
+        "partenariat": "Propose an institutional, academic or media partnership."
+      },
+      "fields": {
+        "organizationKind": "Type of organisation",
+        "auditScope": "Scope of the audit",
+        "projectStage": "Where is your project at?",
+        "learners": "Number of people to train",
+        "learnersHint": "An estimate is enough.",
+        "trainingFormat": "Preferred format",
+        "takafulAudience": "For whom?",
+        "partnerKind": "You represent",
+        "timeframe": "Preferred timeframe",
+        "messageHint": "A few sentences are enough; avoid confidential data at this stage.",
+        "message": {
+          "audit": "Describe the institution and what you expect from the audit",
+          "conseil": "Describe your project and your questions",
+          "accompagnement": "Describe your project and the support you expect",
+          "formation-entreprise": "Which roles and topics would you like to cover?",
+          "takaful": "Describe your protection or financing needs",
+          "partenariat": "Describe the partnership you have in mind"
+        }
+      },
+      "submit": "Send my request",
+      "done": {
+        "title": "Thank you {name}, your request has been received",
+        "lead": "Request “{type}”, reference no. {reference}.",
+        "nextTitle": "What happens next",
+        "next1": "An acknowledgement is on its way to {email} (check your spam folder).",
+        "next2": "A consultant reviews your request and contacts you within {days, plural, one {# business day} other {# business days}}.",
+        "next3": "If your need is clear, you then receive a detailed proposal; otherwise, we arrange a first call.",
+        "resources": "Explore our resources",
+        "home": "Back to home"
+      }
+    },
+    "contact": {
+      "subject": "Subject",
+      "message": "Your message",
+      "submit": "Send",
+      "doneTitle": "Message received",
+      "doneText": "An acknowledgement has been sent to {email}. We will reply within {days, plural, one {# business day} other {# business days}}."
+    },
+    "newsletter": {
+      "submit": "Subscribe",
+      "done": "Almost done: a confirmation email has just been sent. Click the link it contains to confirm your subscription.",
+      "note": "At most one newsletter a month. Double email confirmation, unsubscribe in one click.",
+      "interestsLegend": "Topics you are interested in (optional)"
+    },
+    "guide": {
+      "emailHint": "The download link is also sent to you by email.",
+      "privacy": "Your address is used to send you the guide. You will only receive the newsletter if you tick the box above.",
+      "submit": "Get the guide",
+      "doneTitle": "Your guide is ready",
+      "doneText": "Download it now; the link has also been sent to {email} (valid for seven days).",
+      "download": "Download the guide (PDF)"
+    },
+    "appointment": {
+      "unavailableTitle": "Online calendar coming soon",
+      "unavailableText": "TODO(client): Cal.com account. In the meantime, request an appointment through the contact form or on WhatsApp: we will offer you a slot within two business days.",
+      "kindLegend": "Type of meeting",
+      "kinds": {
+        "decouverte": {
+          "label": "Discovery call, 30 minutes",
+          "hint": "Free and with no commitment: understand your needs."
+        },
+        "audit": {
+          "label": "Audit preparation",
+          "hint": "Define the scope, timeline and documents."
+        },
+        "conseil": {
+          "label": "Advisory and support",
+          "hint": "Discuss a product, window or committee project."
+        }
+      },
+      "open": "Show the calendar",
+      "privacy": "The calendar is provided by Cal.com; it only loads after this click.",
+      "calendarLabel": "Booking calendar"
+    },
+    "newsletterConfirm": {
+      "submit": "Confirm my subscription",
+      "resources": "Explore our resources",
+      "confirmed": {
+        "title": "Subscription confirmed",
+        "text": "Thank you! You will receive our next newsletter. Every issue includes an unsubscribe link."
+      },
+      "already-confirmed": {
+        "title": "Subscription already confirmed",
+        "text": "Your address is already subscribed: there is nothing else to do."
+      },
+      "expired": {
+        "title": "This link has expired",
+        "text": "For your security, confirmation links are valid for three days. Subscribe again from the footer."
+      },
+      "invalid": {
+        "title": "Invalid confirmation link",
+        "text": "The link is incomplete or has already been replaced. Subscribe again from the footer."
+      }
+    }
+  },
+  "emails": {
+    "footer": "Amana Conseil, Douala (Cameroon). Amana Conseil content is provided for information and training purposes: it is neither a fatwa nor personalised financial advice.",
+    "signature": "The Amana Conseil team",
+    "types": {
+      "contact": "general question",
+      "audit": "compliance audit",
+      "conseil": "advisory",
+      "accompagnement": "project support",
+      "formation-entreprise": "team training",
+      "takaful": "takaful and financing",
+      "partenariat": "partnership"
+    },
+    "fields": {
+      "type": "Request",
+      "organization": "Organisation",
+      "reference": "Reference",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "jobTitle": "Job title",
+      "city": "City",
+      "locale": "Language",
+      "sourcePage": "Source page",
+      "message": "Message"
+    },
+    "details": {
+      "organizationKind": "Type of organisation",
+      "auditScope": "Audit scope",
+      "projectStage": "Project stage",
+      "learners": "People to train",
+      "trainingFormat": "Format",
+      "takafulAudience": "Audience",
+      "partnerKind": "Type of partner",
+      "timeframe": "Timeframe",
+      "guide": "Guide",
+      "newsletter": "Newsletter requested"
+    },
+    "ack": {
+      "subject": "We have received your request ({type})",
+      "preview": "A consultant will reply within {days, plural, one {# business day} other {# business days}}.",
+      "heading": "Your request has been received",
+      "greeting": "Hello {name}, thank you for your trust.",
+      "stepsTitle": "What happens next:",
+      "step1": "Your request is passed on to the consultant in charge of the topic.",
+      "step2": "They will contact you within {days, plural, one {# business day} other {# business days}} to clarify your needs.",
+      "step3": "You then receive a tailored proposal, or we arrange a first call.",
+      "summaryTitle": "Summary"
+    },
+    "team": {
+      "subject": "New request: {type}, {name}",
+      "preview": "New request from {name} to handle.",
+      "heading": "New request: {type}",
+      "admin": "Open in the admin",
+      "footer": "Internal notification sent by the Amana Conseil website. Replying to this email writes directly to the requester."
+    },
+    "newsletter": {
+      "subject": "Confirm your subscription to the Amana Conseil newsletter",
+      "preview": "One click to confirm your subscription.",
+      "heading": "Confirm your subscription",
+      "intro": "You asked to receive the Amana Conseil newsletter. Confirm your address by clicking the button below.",
+      "action": "Confirm my subscription",
+      "note": "This link is valid for three days. If you did not make this request, simply ignore this message: you will not be subscribed."
+    },
+    "guide": {
+      "subject": "Your guide: {title}",
+      "preview": "The download link for “{title}”.",
+      "heading": "Your guide is ready",
+      "intro": "Thank you for your interest in “{title}”. Download it with the button below.",
+      "action": "Download the guide",
+      "note": "This personal link is valid for seven days. Please do not forward it: it is for you only."
+    },
+    "auth": {
+      "greeting": "Hello {name},",
+      "greetingAnonymous": "Hello,",
+      "verify": {
+        "subject": "Confirm your email address",
+        "preview": "One click to activate your Amana Conseil account.",
+        "heading": "Activate your account",
+        "intro": "Thank you for signing up. Confirm your email address to access your courses.",
+        "action": "Confirm my address",
+        "note": "Did not sign up? Ignore this message: no account will be activated."
+      },
+      "exists": {
+        "subject": "You already have an account",
+        "preview": "A sign-up was requested with your address.",
+        "heading": "You already have an account",
+        "intro": "A sign-up has just been requested with your address, which already has an account. Sign in; if you have forgotten your password, choose a new one with the link below.",
+        "action": "Choose a new password",
+        "note": "Did not make this request? Ignore this message: your account has not changed."
+      },
+      "reset": {
+        "subject": "Choose a new password",
+        "preview": "Your reset link, valid for one hour.",
+        "heading": "New password",
+        "intro": "You asked to change your password. This link is valid for one hour and works only once.",
+        "action": "Choose a new password",
+        "note": "Did not make this request? Ignore this message: your current password remains valid."
+      }
+    }
+  },
+  "learn": {
+    "breadcrumb": {
+      "home": "Home",
+      "formation": "Training",
+      "catalog": "Online courses"
+    },
+    "levels": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced"
+    },
+    "formats": {
+      "course": "Course",
+      "capsule": "Capsule"
+    },
+    "languages": {
+      "fr": "French",
+      "en": "English",
+      "ar": "Arabic"
+    },
+    "lessonTypes": {
+      "video": "Video",
+      "text": "Text",
+      "pdf": "PDF document",
+      "quiz": "Quiz",
+      "case-study": "Case study"
+    },
+    "jobRoles": {
+      "compliance": "Compliance",
+      "front-office": "Front office",
+      "back-office": "Back office",
+      "management": "Management",
+      "other": "Other roles"
+    },
+    "paths": {
+      "courseCount": "{count, plural, one {# course} other {# courses}}"
+    },
+    "card": {
+      "defaultTheme": "Islamic finance",
+      "noUnitPrice": "Included in learning paths and packs"
+    },
+    "featured": {
+      "title": "Featured courses",
+      "catalog": "Browse the full catalogue"
+    },
+    "catalog": {
+      "title": "Online courses",
+      "lead": "Full courses for individuals and short capsules for teams, designed for mobile, with a verifiable certificate.",
+      "all": "All",
+      "filters": {
+        "title": "Filter the catalogue",
+        "search": "Search for a course",
+        "searchHint": "E.g. murabaha, takaful, sharia audit.",
+        "theme": "Topic",
+        "level": "Level",
+        "format": "Format",
+        "duration": "Duration",
+        "price": "Price",
+        "language": "Language",
+        "submit": "Show courses",
+        "reset": "Clear filters"
+      },
+      "sort": {
+        "label": "Sort by",
+        "recommandes": "Recommended",
+        "pertinence": "Relevance",
+        "recents": "Newest",
+        "prix-croissant": "Price: low to high",
+        "prix-decroissant": "Price: high to low",
+        "duree": "Shortest first"
+      },
+      "durations": {
+        "moins-1h": "Under one hour",
+        "1h-3h": "1 to 3 hours",
+        "plus-3h": "Over 3 hours"
+      },
+      "prices": {
+        "gratuit": "Free",
+        "moins-30000": "Under 30,000 XAF",
+        "30000-60000": "30,000 to 60,000 XAF",
+        "plus-60000": "Over 60,000 XAF"
+      },
+      "chips": {
+        "label": "Active filters",
+        "remove": "(remove this filter)",
+        "q": "“{q}”"
+      },
+      "count": "{count, plural, =0 {No courses} one {# course} other {# courses}}",
+      "empty": {
+        "title": "No course matches these criteria",
+        "text": "Remove a filter, or browse the full catalogue.",
+        "textSearch": "No results for “{q}”. Check the spelling or try a broader term.",
+        "action": "Browse the full catalogue"
+      },
+      "coursesHeading": "Courses",
+      "capsulesHeading": "Capsules for businesses",
+      "capsulesLead": "Three to ten minutes per job role, sold in packs and licences for your teams.",
+      "pathsTitle": "Learning paths",
+      "pathsLead": "Several courses taken in order, at a bundled price, with a path certificate."
+    },
+    "course": {
+      "outlineEmpty": "The detailed syllabus will be published soon.",
+      "moduleTitle": "Module {number}: {title}",
+      "moduleMeta": "{count, plural, one {# lesson} other {# lessons}}, {duration}",
+      "freePreview": "Free preview",
+      "watchPreview": "Watch the preview",
+      "readPreview": "Read the preview",
+      "watchTrailer": "Watch the introduction",
+      "includes": {
+        "lessons": "{count, plural, one {# lesson} other {# lessons}}",
+        "duration": "{duration} of content",
+        "quizzes": "{count, plural, one {# graded quiz} other {# graded quizzes}}",
+        "certificate": "Certificate verifiable online",
+        "mobile": "On mobile, at your own pace, with data saver mode"
+      },
+      "cta": {
+        "business": "Request a demo",
+        "request": "Request access"
+      },
+      "facts": {
+        "duration": "Duration",
+        "lessons": "Lessons",
+        "lessonsValue": "{count, plural, one {# lesson} other {# lessons}}",
+        "level": "Level",
+        "language": "Language",
+        "certificate": "Certificate",
+        "certificateValue": "Included"
+      },
+      "byInstructors": "With {names}",
+      "objectivesTitle": "What you will be able to do",
+      "outlineTitle": "Syllabus",
+      "outlineSummary": "{modules, plural, one {# module} other {# modules}}, {lessons, plural, one {# lesson} other {# lessons}}, {duration} in total.",
+      "outlinePreviews": "{count, plural, one {# free preview, no account needed.} other {# free previews, no account needed.}}",
+      "descriptionTitle": "About this course",
+      "prerequisitesTitle": "Prerequisites",
+      "instructorsTitle": "{count, plural, one {Your instructor} other {Your instructors}}",
+      "instructorRole": "Instructor, Amana Conseil",
+      "reviews": {
+        "title": "Participant reviews",
+        "average": "{average} out of 5, from {count} reviews",
+        "rating": "{rating} out of 5",
+        "none": "No reviews published yet. Reviews are reserved for participants who have completed at least half of the course, and are checked before publication.",
+        "belowThreshold": "The average rating is shown once three reviews are published.",
+        "policy": "Reviews from participants who completed at least half of the course, checked before publication."
+      },
+      "pathsTitle": "This course is part of these paths",
+      "priceBusiness": "As a pack or a licence",
+      "priceOnRequest": "Price on request",
+      "noteBusiness": "Capsules are offered to businesses in themed packs or as an annual per-seat licence. We will send you a quote.",
+      "noteIndividual": "Online payment (Mobile Money, card) opens soon. In the meantime, write to us: we will explain how to pay by bank transfer and open your access.",
+      "relatedTitle": "Related courses"
+    },
+    "path": {
+      "kind": "Learning path",
+      "coursesTitle": "Courses in this path",
+      "step": "Step {number}:",
+      "unitPrice": "Single course price:",
+      "descriptionTitle": "About this path",
+      "includes": {
+        "duration": "{duration} of content",
+        "certificate": "Path certificate verifiable online"
+      },
+      "priceOnRequest": "Price on request",
+      "cta": "Request access",
+      "separatePrice": "Courses bought separately: {amount}.",
+      "note": "Online payment opens soon; write to us to access the path now."
+    },
+    "preview": {
+      "loading": "Loading the preview…",
+      "free": "Free preview, no account needed.",
+      "of": "(preview: {title})",
+      "transcript": "Transcript",
+      "errors": {
+        "not-found": "This preview is no longer available.",
+        "unavailable": "The video is being prepared. Please try again in a few minutes.",
+        "rate-limited": "Too many requests in a short time. Please try again in a few minutes.",
+        "unsupported": "This browser cannot play this video here yet. It will play in the course player; the transcript is available below."
+      }
+    },
+    "auth": {
+      "showPassword": "Show password",
+      "resend": "Resend the confirmation link",
+      "resent": {
+        "title": "Link sent",
+        "text": "If an unconfirmed account exists for {email}, a new link has just been sent to it."
+      },
+      "fields": {
+        "email": "Email address",
+        "emailHint": "We will send a link there to confirm your address.",
+        "password": "Password",
+        "newPassword": "Password",
+        "passwordHint": "At least {min} characters. An easy-to-remember phrase works well.",
+        "firstName": "First name",
+        "lastName": "Last name"
+      },
+      "errors": {
+        "required": "This field is required.",
+        "email": "Enter a valid email address, for example name@example.cm.",
+        "tooShort": "This text is too short.",
+        "tooLong": "This text is too long: please shorten it.",
+        "phone": "Enter a valid phone number.",
+        "choice": "Choose an option from the list.",
+        "consent": "Tick the box to continue.",
+        "number": "Enter a valid number.",
+        "passwordLength": "Choose a password of 10 to 128 characters.",
+        "terms": "Accept the terms of use and the privacy policy to create your account."
+      },
+      "submit": {
+        "captcha": {
+          "title": "Anti-robot check failed",
+          "text": "Reload the page and try again. If the problem persists, disable any content blocker."
+        },
+        "rate-limited": {
+          "title": "Too many attempts",
+          "text": "For security, please try again in {minutes} min."
+        },
+        "invalid-credentials": {
+          "title": "Incorrect email or password",
+          "text": "Check what you typed. After five failed attempts, sign-in is suspended for fifteen minutes; use “Forgot password” if in doubt."
+        },
+        "unverified": {
+          "title": "Email address to confirm",
+          "text": "Open the link you received by email when you signed up to activate your account."
+        },
+        "invalid-token": {
+          "title": "Link expired or already used",
+          "text": "Request a new link: it is valid for one hour and works only once."
+        },
+        "server": {
+          "title": "An incident prevents us from processing your request",
+          "text": "It is not your fault. Please try again in a moment."
+        }
+      },
+      "signIn": {
+        "title": "Sign in",
+        "lead": "Find your courses, your progress and your certificates.",
+        "submit": "Sign in",
+        "forgot": "Forgot your password?",
+        "noAccount": "No account yet?",
+        "createAccount": "Create an account"
+      },
+      "signUp": {
+        "title": "Create an account",
+        "lead": "A free account to follow your courses, on mobile or computer.",
+        "submit": "Create my account",
+        "doneTitle": "Check your inbox",
+        "doneText": "An email has just been sent to {email}. Open the link it contains to activate your account. Remember to check your spam folder.",
+        "terms": "I accept the <cgu>terms of use</cgu> and the <privacy>privacy policy</privacy>.",
+        "hasAccount": "Already have an account?",
+        "signIn": "Sign in"
+      },
+      "forgot": {
+        "title": "Forgot password",
+        "lead": "Enter your address: we will send you a link to choose a new password.",
+        "submit": "Send me the link",
+        "doneTitle": "Check your inbox",
+        "doneText": "If an account exists for {email}, a link valid for one hour has just been sent to it.",
+        "back": "Back to sign in"
+      },
+      "reset": {
+        "title": "New password",
+        "lead": "Choose a new password. You will be signed in afterwards.",
+        "submit": "Save and sign in",
+        "requestAgain": "Request a new link"
+      },
+      "verify": {
+        "title": "Confirm your address",
+        "intro": "One last step: confirm your email address to activate your account.",
+        "submit": "Confirm my address",
+        "doneTitle": "Address confirmed",
+        "doneText": "Your account is active. Sign in to get started.",
+        "invalid": {
+          "title": "Link expired or already used",
+          "text": "If your address is already confirmed, sign in. Otherwise, sign in to receive a new link."
+        },
+        "error": {
+          "title": "Confirmation unavailable for now",
+          "text": "Please try again in a moment."
+        }
+      },
+      "signedIn": {
+        "text": "You are signed in ({name}).",
+        "catalog": "Browse courses",
+        "signOut": "Sign out"
+      },
+      "benefits": {
+        "title": "Your Amana Conseil account",
+        "progress": "Pick up each course where you left off, on all your devices.",
+        "certificates": "Earn certificates verifiable by a code and a QR code.",
+        "mobile": "Follow your courses on mobile, with a data saver mode.",
+        "privacy": "Your data is used only for your training. No resale, no advertising."
+      }
+    }
+  }
+}
