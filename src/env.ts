@@ -105,6 +105,11 @@ export const serverEnvSchema = z
       .default('240p'),
     CALCOM_WEBHOOK_SECRET: optionalString,
     NEXT_PUBLIC_CALCOM_LINK: optionalString,
+    // Anti-robot Turnstile désactivé par défaut (ADR 020) ; `1` pour le réactiver partout.
+    NEXT_PUBLIC_TURNSTILE_ENABLED: z
+      .enum(['0', '1', 'true', 'false'])
+      .default('0')
+      .transform((value) => value === '1' || value === 'true'),
     TURNSTILE_SECRET_KEY: optionalString,
     NEXT_PUBLIC_TURNSTILE_SITE_KEY: optionalString,
     // Build de production local / CI : autorise les adaptateurs de développement
@@ -139,8 +144,9 @@ export const serverEnvSchema = z
     if (env.NODE_ENV !== 'production' || env.ALLOW_DEV_SERVICES) return
     if (env.NEXT_PHASE === 'phase-production-build') return
     const needed = [
-      'TURNSTILE_SECRET_KEY',
-      'NEXT_PUBLIC_TURNSTILE_SITE_KEY',
+      ...(env.NEXT_PUBLIC_TURNSTILE_ENABLED
+        ? (['TURNSTILE_SECRET_KEY', 'NEXT_PUBLIC_TURNSTILE_SITE_KEY'] as const)
+        : []),
       'RESEND_API_KEY',
       'EMAIL_FROM',
     ] as const

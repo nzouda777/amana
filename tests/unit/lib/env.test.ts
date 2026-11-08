@@ -59,16 +59,25 @@ describe('validation des variables d’environnement', () => {
 describe('services des formulaires publics en production', () => {
   const production = { ...valid, NODE_ENV: 'production' }
 
-  it('exige Turnstile et Resend à l’exécution en production', () => {
-    expect(() => parseServerEnv(production)).toThrow(/TURNSTILE_SECRET_KEY/)
-    const env = parseServerEnv({
-      ...production,
-      TURNSTILE_SECRET_KEY: 'secret',
-      NEXT_PUBLIC_TURNSTILE_SITE_KEY: 'site',
-      RESEND_API_KEY: 're_test',
-      EMAIL_FROM: 'Amana Conseil <no-reply@example.cm>',
-    })
+  const resend = { RESEND_API_KEY: 're_test', EMAIL_FROM: 'Amana Conseil <no-reply@example.cm>' }
+
+  it('exige Resend à l’exécution en production ; Turnstile désactivé par défaut (ADR 020)', () => {
+    expect(() => parseServerEnv(production)).toThrow(/RESEND_API_KEY/)
+    const env = parseServerEnv({ ...production, ...resend })
+    expect(env.NEXT_PUBLIC_TURNSTILE_ENABLED).toBe(false)
     expect(env.ALLOW_DEV_SERVICES).toBe(false)
+  })
+
+  it('exige les clés Turnstile en production quand il est réactivé', () => {
+    const enabled = { ...production, ...resend, NEXT_PUBLIC_TURNSTILE_ENABLED: '1' }
+    expect(() => parseServerEnv(enabled)).toThrow(/TURNSTILE_SECRET_KEY/)
+    expect(
+      parseServerEnv({
+        ...enabled,
+        TURNSTILE_SECRET_KEY: 'secret',
+        NEXT_PUBLIC_TURNSTILE_SITE_KEY: 'site',
+      }).NEXT_PUBLIC_TURNSTILE_ENABLED,
+    ).toBe(true)
   })
 
   it('tolère leur absence pendant `next build` et avec ALLOW_DEV_SERVICES=1', () => {

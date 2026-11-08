@@ -64,9 +64,11 @@ export function getNewsletterGateway(): NewsletterGateway {
 }
 
 function getTurnstileVerifier(): TurnstileVerifier {
-  turnstile ??= createTurnstileVerifier(
-    getServerEnv().TURNSTILE_SECRET_KEY ?? TURNSTILE_TEST_SECRET_KEY,
-  )
+  const env = getServerEnv()
+  // Désactivé (ADR 020) : aucun appel à Cloudflare ; la limitation de débit reste active.
+  turnstile ??= env.NEXT_PUBLIC_TURNSTILE_ENABLED
+    ? createTurnstileVerifier(env.TURNSTILE_SECRET_KEY ?? TURNSTILE_TEST_SECRET_KEY)
+    : async () => true
   return turnstile
 }
 

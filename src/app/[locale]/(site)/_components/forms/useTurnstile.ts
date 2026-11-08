@@ -34,6 +34,9 @@ declare global {
 
 /** Clé de site : configurée, sinon clé de test Cloudflare « toujours valide » (dev, CI). */
 const SITE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || '1x00000000000000000000AA'
+/** Désactivé par défaut (ADR 020) : aucun script tiers, jeton factice accepté par le serveur. */
+const ENABLED = ['1', 'true'].includes(process.env.NEXT_PUBLIC_TURNSTILE_ENABLED ?? '')
+const DISABLED_TOKEN = 'turnstile-disabled'
 const SCRIPT_URL = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit'
 
 let scriptPromise: Promise<TurnstileApi> | null = null
@@ -65,6 +68,7 @@ export function useTurnstile(locale: string) {
   const [state, setState] = useState<TurnstileState>('idle')
 
   const activate = useCallback(() => {
+    if (!ENABLED) return
     if (widgetRef.current || !containerRef.current || state === 'loading') return
     setState('loading')
     loadScript()
@@ -93,6 +97,7 @@ export function useTurnstile(locale: string) {
   /** Jeton courant, en attendant au plus `timeoutMs` qu'il arrive. */
   const getToken = useCallback(
     (timeoutMs = 15_000): Promise<string> => {
+      if (!ENABLED) return Promise.resolve(DISABLED_TOKEN)
       activate()
       if (tokenRef.current) return Promise.resolve(tokenRef.current)
       return new Promise((resolve) => {
