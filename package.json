@@ -22,6 +22,7 @@
     "migrate:create": "cross-env SKIP_ENV_VALIDATION=1 payload migrate:create",
     "migrate:status": "cross-env PAYLOAD_DB_DIRECT=1 payload migrate:status",
     "seed": "tsx --env-file-if-exists=.env src/seed/index.ts",
+    "create-admin": "tsx --env-file-if-exists=.env src/scripts/create-admin.ts",
     "migrate:fresh": "cross-env PAYLOAD_DB_DIRECT=1 payload migrate:fresh"
   },
   "dependencies": {
