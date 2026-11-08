@@ -98,6 +98,7 @@ beforeEach(() => {
     rateLimiter: new MemoryRateLimiter({ limit: 10, windowMs: 60_000 }),
     emailRateLimiter: new MemoryRateLimiter({ limit: 5, windowMs: 60_000 }),
     verifyTurnstile: async (value) => value === token,
+    canSendEmail: true,
     reportError: (_error, context) => errors.push(context),
   }
 })
@@ -249,6 +250,53 @@ describe('auth : connexion', () => {
       ),
     ).toEqual({ ok: false, error: 'server' })
     expect(errors).toEqual(['sign-in'])
+  })
+})
+
+describe('auth : envoi d’e-mails non configuré (ADR 021)', () => {
+  const emailRequest = { email: 'awa@example.cm', turnstileToken: token }
+
+  it('la connexion d’un compte existant fonctionne sans service d’e-mails', async () => {
+    await signUp(signUpInput(), ctx, deps)
+    accounts.accounts[0]!.verified = true
+    deps = { ...deps, canSendEmail: false }
+    expect(
+      await signIn(
+        { email: 'awa@example.cm', password: goodPassword, turnstileToken: token },
+        ctx,
+        deps,
+      ),
+    ).toEqual({ ok: true })
+  })
+
+  it('inscription refusée avant toute création de compte ni envoi', async () => {
+    deps = { ...deps, canSendEmail: false }
+    expect(await signUp(signUpInput(), ctx, deps)).toEqual({
+      ok: false,
+      error: 'email-unavailable',
+    })
+    expect(accounts.accounts).toHaveLength(0)
+    expect(mailer.sent).toHaveLength(0)
+  })
+
+  it('nouvel envoi du lien et mot de passe oublié refusés, sans jeton créé', async () => {
+    deps = { ...deps, canSendEmail: false }
+    expect(await resendVerification(emailRequest, ctx, deps)).toEqual({
+      ok: false,
+      error: 'email-unavailable',
+    })
+    expect(await requestPasswordReset(emailRequest, ctx, deps)).toEqual({
+      ok: false,
+      error: 'email-unavailable',
+    })
+    expect(mailer.sent).toHaveLength(0)
+  })
+
+  it('les champs restent validés en premier', async () => {
+    deps = { ...deps, canSendEmail: false }
+    expect(await signUp(signUpInput({ email: 'pas-un-email' }), ctx, deps)).toMatchObject({
+      error: 'validation',
+    })
   })
 })
 

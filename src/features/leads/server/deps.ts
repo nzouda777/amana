@@ -3,10 +3,10 @@ import path from 'node:path'
 
 import { getTranslations } from 'next-intl/server'
 
-import { getServerEnv } from '@/env'
+import { getServerEnv, isEmailConfigured } from '@/env'
 import type { EmailSender, NewsletterGateway } from '@/features/email/contracts'
 import { BrevoNewsletterGateway, NoopNewsletterGateway } from '@/lib/email/brevo'
-import { FileEmailSender, ResendEmailSender } from '@/lib/email/senders'
+import { FileEmailSender, ResendEmailSender, UnconfiguredEmailSender } from '@/lib/email/senders'
 import { getDirection } from '@/lib/i18n/config'
 import { getPathname } from '@/lib/i18n/navigation'
 import { getPayloadClient } from '@/lib/payload'
@@ -44,13 +44,14 @@ export function getEmailSender(): EmailSender {
   if (emailSender) return emailSender
   const env = getServerEnv()
   const from = env.EMAIL_FROM ?? 'Amana Conseil <no-reply@amana-conseil.example>'
-  emailSender = env.RESEND_API_KEY
-    ? new ResendEmailSender(env.RESEND_API_KEY, from)
-    : new FileEmailSender(
-        // Dossier de développement : rien à tracer pour le déploiement.
-        path.resolve(/* turbopackIgnore: true */ process.cwd(), env.DEV_EMAIL_DIR),
-        from,
-      )
+  if (env.RESEND_API_KEY) emailSender = new ResendEmailSender(env.RESEND_API_KEY, from)
+  else if (!isEmailConfigured(env)) emailSender = new UnconfiguredEmailSender()
+  else
+    emailSender = new FileEmailSender(
+      // Dossier de développement : rien à tracer pour le déploiement.
+      path.resolve(/* turbopackIgnore: true */ process.cwd(), env.DEV_EMAIL_DIR),
+      from,
+    )
   return emailSender
 }
 

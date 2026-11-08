@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { EnvValidationError, parseServerEnv } from '@/env'
+import { EnvValidationError, isEmailConfigured, parseServerEnv } from '@/env'
 
 const valid = {
   DATABASE_URL:
@@ -61,11 +61,21 @@ describe('services des formulaires publics en production', () => {
 
   const resend = { RESEND_API_KEY: 're_test', EMAIL_FROM: 'Amana Conseil <no-reply@example.cm>' }
 
-  it('exige Resend à l’exécution en production ; Turnstile désactivé par défaut (ADR 020)', () => {
-    expect(() => parseServerEnv(production)).toThrow(/RESEND_API_KEY/)
-    const env = parseServerEnv({ ...production, ...resend })
+  it('démarre en production sans Resend ni Turnstile ; envoi d’e-mails indisponible (ADR 020, 021)', () => {
+    const env = parseServerEnv(production)
     expect(env.NEXT_PUBLIC_TURNSTILE_ENABLED).toBe(false)
     expect(env.ALLOW_DEV_SERVICES).toBe(false)
+    expect(isEmailConfigured(env)).toBe(false)
+  })
+
+  it('une clé Resend impose l’expéditeur et rend l’envoi disponible', () => {
+    expect(() => parseServerEnv({ ...production, RESEND_API_KEY: 're_test' })).toThrow(/EMAIL_FROM/)
+    expect(isEmailConfigured(parseServerEnv({ ...production, ...resend }))).toBe(true)
+  })
+
+  it('envoi disponible hors production et avec ALLOW_DEV_SERVICES=1 (fichiers locaux)', () => {
+    expect(isEmailConfigured(parseServerEnv(valid))).toBe(true)
+    expect(isEmailConfigured(parseServerEnv({ ...production, ALLOW_DEV_SERVICES: '1' }))).toBe(true)
   })
 
   it('exige les clés Turnstile en production quand il est réactivé', () => {

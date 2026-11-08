@@ -21,6 +21,19 @@ function formatList(addresses: EmailAddress | EmailAddress[]): string[] {
   return (Array.isArray(addresses) ? addresses : [addresses]).map(formatAddress)
 }
 
+/**
+ * Production sans Resend (ADR 021) : chaque envoi échoue explicitement, rien n'est écrit sur
+ * disque. Les appelants qui tolèrent l'échec (notification d'une demande) continuent.
+ */
+export class UnconfiguredEmailSender implements EmailSender {
+  async send(): Promise<EmailSendResult> {
+    throw new EmailError(
+      'provider-unavailable',
+      'Envoi d’e-mails non configuré : définissez RESEND_API_KEY et EMAIL_FROM.',
+    )
+  }
+}
+
 /** Envoi réel via Resend (production). */
 export class ResendEmailSender implements EmailSender {
   private readonly client: Resend

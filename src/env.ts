@@ -139,16 +139,16 @@ export const serverEnvSchema = z
           })
       }
     }
-    // En production (à l'exécution, pas pendant `next build`), les formulaires publics exigent
-    // Turnstile et l'envoi réel des e-mails.
+    // En production (à l'exécution, pas pendant `next build`). Resend n'est pas exigé au
+    // démarrage : sans lui, le site et la connexion fonctionnent, seuls les envois d'e-mails
+    // sont refusés (`isEmailConfigured`, ADR 021). Une clé Resend impose un expéditeur.
     if (env.NODE_ENV !== 'production' || env.ALLOW_DEV_SERVICES) return
     if (env.NEXT_PHASE === 'phase-production-build') return
     const needed = [
       ...(env.NEXT_PUBLIC_TURNSTILE_ENABLED
         ? (['TURNSTILE_SECRET_KEY', 'NEXT_PUBLIC_TURNSTILE_SITE_KEY'] as const)
         : []),
-      'RESEND_API_KEY',
-      'EMAIL_FROM',
+      ...(env.RESEND_API_KEY ? (['EMAIL_FROM'] as const) : []),
     ] as const
     for (const key of needed) {
       if (!env[key])
@@ -208,4 +208,12 @@ let cached: ServerEnv | undefined
 export function getServerEnv(): ServerEnv {
   cached ??= parseServerEnv(process.env)
   return cached
+}
+
+/**
+ * Envoi d'e-mails disponible : Resend configuré, ou adaptateur de développement autorisé
+ * (hors production, ou `ALLOW_DEV_SERVICES=1`). Faux en production sans Resend (ADR 021).
+ */
+export function isEmailConfigured(env: ServerEnv = getServerEnv()): boolean {
+  return Boolean(env.RESEND_API_KEY) || env.NODE_ENV !== 'production' || env.ALLOW_DEV_SERVICES
 }

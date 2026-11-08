@@ -5,7 +5,7 @@ import { APIError, AuthenticationError, LockedAuth, type Payload, UnverifiedEmai
 import { ActionEmail } from '@/features/leads/emails/templates'
 import { MemoryRateLimiter } from '@/features/leads/rate-limit'
 import { getEmailSender, getLeadDeps } from '@/features/leads/server/deps'
-import { getServerEnv } from '@/env'
+import { getServerEnv, isEmailConfigured } from '@/env'
 import { getDirection, isLocale, type Locale } from '@/lib/i18n/config'
 import { getPathname } from '@/lib/i18n/navigation'
 import { getPayloadClient } from '@/lib/payload'
@@ -215,6 +215,7 @@ export function getAuthDeps(): AuthDeps {
     rateLimiter: ipLimiter,
     emailRateLimiter: emailLimiter,
     verifyTurnstile: getLeadDeps().verifyTurnstile,
+    canSendEmail: isEmailConfigured(),
     reportError,
   }
 }

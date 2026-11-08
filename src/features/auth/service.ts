@@ -70,6 +70,11 @@ export type AuthDeps = {
   /** Par adresse e-mail visée (connexion, envois d'e-mails) : freine le bourrage ciblé. */
   emailRateLimiter: RateLimiter
   verifyTurnstile: TurnstileVerifier
+  /**
+   * Faux tant qu'aucun service d'envoi n'est configuré en production (Resend) : l'inscription
+   * et les liens par e-mail sont refusés avant toute écriture ; la connexion reste ouverte.
+   */
+  canSendEmail: boolean
   reportError: (error: unknown, context: string) => void
 }
 
@@ -80,6 +85,8 @@ export type AuthError =
   | 'invalid-credentials'
   | 'unverified'
   | 'invalid-token'
+  /** Envoi d'e-mails non configuré : inscription et liens par e-mail indisponibles. */
+  | 'email-unavailable'
   | 'server'
 
 export type AuthResult =
@@ -112,6 +119,8 @@ async function guard(
     return { ok: false, error: 'captcha' }
   return { ok: true }
 }
+
+const emailUnavailable: AuthResult = { ok: false, error: 'email-unavailable' }
 
 const validation = (fieldErrors: AuthFieldErrors): AuthResult => ({
   ok: false,
@@ -149,6 +158,8 @@ export async function signUp(
   const parsed = signUpSchema.safeParse(input)
   if (!parsed.success) return validation(toAuthFieldErrors(parsed.error))
   const { email, password, firstName, lastName, turnstileToken } = parsed.data
+  // Avant toute écriture : un compte créé sans e-mail de confirmation resterait inutilisable.
+  if (!deps.canSendEmail) return emailUnavailable
   const checked = await guard(deps, 'sign-up', ctx, turnstileToken, email)
   if (!checked.ok) return checked
   try {
@@ -185,6 +196,7 @@ export async function resendVerification(
   const parsed = emailRequestSchema.safeParse(input)
   if (!parsed.success) return validation(toAuthFieldErrors(parsed.error))
   const { email, turnstileToken } = parsed.data
+  if (!deps.canSendEmail) return emailUnavailable
   const checked = await guard(deps, 'verify-resend', ctx, turnstileToken, email)
   if (!checked.ok) return checked
   try {
@@ -226,6 +238,7 @@ export async function requestPasswordReset(
   const parsed = emailRequestSchema.safeParse(input)
   if (!parsed.success) return validation(toAuthFieldErrors(parsed.error))
   const { email, turnstileToken } = parsed.data
+  if (!deps.canSendEmail) return emailUnavailable
   const checked = await guard(deps, 'reset-request', ctx, turnstileToken, email)
   if (!checked.ok) return checked
   try {

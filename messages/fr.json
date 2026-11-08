@@ -1509,6 +1509,10 @@
           "title": "Lien expiré ou déjà utilisé",
           "text": "Demandez un nouveau lien : il est valable une heure et ne sert qu’une fois."
         },
+        "email-unavailable": {
+          "title": "Service momentanément indisponible",
+          "text": "La création de compte et l’envoi de liens par e-mail ouvrent prochainement. Si vous avez déjà un compte, vous pouvez vous connecter."
+        },
         "server": {
           "title": "Un incident nous empêche de traiter votre demande",
           "text": "Ce n’est pas de votre fait. Réessayez dans un instant."
